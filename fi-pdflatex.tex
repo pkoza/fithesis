@@ -46,18 +46,16 @@
     university    = mu,
     faculty       = fi,
     type          = bc,
-    author        = Jane Doe,
-    gender        = f,
-    advisor       = John Smith,
-    title         = {The Proof of P = NP},
-    TeXtitle      = {The Proof of $\mathsf{P}=\mathsf{NP}$},
+    author        = Peter Koza,
+    gender        = m,
+    advisor       = Jaroslav Ráček,
+    title         = {Portál digitálního kulturního dědictví},
+    TeXtitle      = {Portál digitálního kulturního dědictví},
     keywords      = {keyword1, keyword2, ...},
     TeXkeywords   = {keyword1, keyword2, \ldots},
 }
 \thesislong{abstract}{
-    This is the abstract of my thesis, which can
-
-    span multiple paragraphs. Young nigga got it bad cause im brown.
+    Popsat principy digitalizace a publikování oběktů kulturního dědictví. Zaměřit se na tuto problematiku zejména z pohledu regionálních institucí v České republice. Popsat a analyzovat možnosti využití technologie Liferay Portal pro zpracování a publikování záznamů o objektech kulturního dědictví. V praktické části analyzovat, navrhnout, implementovat a nasadit do provozu prototyp konkrétního portálu kulturního dědictví. Analýza a návrh systému bude nad modely UML, implementace bude v Liferay Portál. V rámci práce řešit i vyhledávání nad automaticky rozpoznanými texty jednotlivých objektů a import dat z prostředí vybrané instituce.
 }
 \thesislong{thanks}{
     This is the acknowledgement for my thesis, 
@@ -86,6 +84,43 @@
 \usepackage{url}
 \usepackage{menukeys}
 \begin{document}
+\chapter{Portály digitálneho kultúrneho dedičstva}	
+Zámerom tejto iniciatívy je vytvoriť webový portál, ktorého prostredníctvom bude zaisťovaná príprava a samotné sprístupnenie digitálneho obsahu vybraných fondov pamäťových inštitúcií pôsobiacich na území Českej republiky širokej verejnosti a odborným bádateľom. Ďalej bude umožňovať on-line úpravu metadát a možnosť priloženia ďalších materiálov ktoré s dokumentom súvisia. Web by mal užívateľa zaujať a vytvoriť dojem jednoducho používateľnej interaktívnej stránky aj u používateľa, ktorého daná tématika nezaujíma.
+\section{Problémy existujúcich riešení}
+Digitálny obsah sa primárne skladá z kníh. Problémom existujúcich nástrojov na prehliadanie tohto obsahu je nepríťažlivosť pre užívateľa. 
+\subsection{Zobrazenie knižných dát}
+Tabuľkové zobrazenie knižných záznamov nespĺňa požiadavky modernej webovej aplikácie. Príkladom je katalóg Slezského zemského múzea\footnote{Viď \url{http://knihovna.szmo.cz/katalog/}.}. Vyhľadávanie je realizované jedným formulárom. Výsledky sú zobrazované jednoduchou tabuľkou, ktorá poskytuje minimum informácií o dokumente a jeho uložení. V tabuľke sú ako prvé uvedené informácie Dok a Sign, ktorých názvy sú neintuitívne a teda pre koncového užívateľa pri prvom prístupe na web nepodstatné. Ďalej sú zobrazené údaje autor, názov, časť, rok a počet. Zvyšok údajov je zobrazený až po kliknutí na názov dokumentu. Ostatné atribúty sú neaktívne. V detaile dokumentu chýbajú užívateľsky príťažlivé prvky, ako napríklad mapa uloženia, diskusia k dielu, možnosť rezervácie alebo zobrazenie skenovaných obrázkov. Aj napriek tomu, že tento web podáva hodnoverné informácie o dokumentoch, nie je možné ho označiť za užívateľsky príťažlivý a po prvom použití nenavádza užívateľa k ďalšej návšteve.
+\subsection{Realizácia vyhľadávania}
+Na stránke systému Kramerius\footnote{Viď \url{http://kramerius.nkp.cz/kramerius/Welcome.do}.} je sprístupnené vyhľadávanie dokumentov Národnej knižnice Českej republiky. Užívateľské rozhranie je oproti predošlému webu obohatené o funkciu hľadania v celom texte, ktorá umožňuje jednoduchšie zoznámenie sa s funkciami aplikácie. Pokročilé vyhľadávanie je možné zobraziť a skryť pridaným tlačidlom. Priamo na úvodnej stránke sú umiestnené príklady skenovaných dokumentov, ktoré odkazom vedú na detail diela. Zobrazenie výsledkov vyhľadávania je riešené jednoduchým zoznamom. Tento prístup prináša vysokú mieru neprehľadnosti, pretože užívateľ nemôže porovnať hodnoty, či zoradiť výsledky na základe jednotlivých atribútov. Detail obsahuje
+stručné informácie o diele a náhľad strán, ktorý ale nie je dostupný bez inštalácie zásuvného modulu. 
+\section{Poučenie o tvorbe portálov kultúrneho dedičstva}
+Z analýzy existujúcich nástrojov na prehliadanie kultúrneho dedičstva bolo zistené že pri návrhu aplikácie by sme sa mali zamerať na nasledujúce oblasti:
+\begin{itemize}
+	\item vyhľadávanie
+	\begin{itemize}
+		\item umožniť hľadanie v celom texte 
+		\item pridať prvky pre oživenie ako napr. mapa alebo rezy
+	\end{itemize}
+	\item zobrazenie výsledkov
+	\begin{itemize}
+		\item vytvoriť prehľadnú tabuľku obsahujúcu relevantné atribúty
+		\item v prípade použitia mapy poskytnúť možnosť jednoduchého prepnutia 
+	\end{itemize}
+	\item detail diela
+	\begin{itemize}
+		\item pridať užívateľsky príťažlivé prvky
+		\begin{itemize}
+			\item mapa umiestnenia				
+			\item diskusia k dielu
+			\item zobrazenie náhľadu dokumentov
+			\item rezervácia knihy
+		\end{itemize}
+	\end{itemize}
+	
+	
+	
+\end{itemize}
+
 \chapter{Introduction}
 Theses are rumoured to be the capstones of education, so I decided
 to write one of my own. If all goes well, I will soon have a

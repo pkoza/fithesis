@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.14)  14 MAY 2016 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.14)  14 MAY 2016 22:21
 entering extended mode
 **fi-pdflatex.tex
 (fi-pdflatex.tex
@@ -1806,8 +1806,8 @@ File: fithesis/style/mu/fithesis-12.clo 2016/01/07
 )) (fithesis/style/mu/fithesis-fi.sty
 Package: fithesis/style/mu/fithesis-fi 2016/01/07
 )
-Package hyperref Info: Option `unicode' set `true' on input line 88.
-Package hyperref Info: Option `unicode' set `true' on input line 88.
+Package hyperref Info: Option `unicode' set `true' on input line 86.
+Package hyperref Info: Option `unicode' set `true' on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
 Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
@@ -1822,14 +1822,14 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'slovak'.
-(csquotes)                Using fallback style on input line 88.
+(csquotes)                Using fallback style on input line 86.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 Package biblatex Info: Trying to load language 'slovak'...
 Package biblatex Info: ... file 'slovak.lbx' not found.
 
 Package biblatex Warning: Language 'slovak' not supported.
-(biblatex)                Using fallback language 'english' on input line 88.
+(biblatex)                Using fallback language 'english' on input line 86.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1855,32 +1855,32 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
 (fi-pdflatex.aux
-LaTeX Font Info:    Try loading font information for T2A+qpl on input line 59.
-LaTeX Font Info:    No file T2Aqpl.fd. on input line 59.
+LaTeX Font Info:    Try loading font information for T2A+qpl on input line 66.
+LaTeX Font Info:    No file T2Aqpl.fd. on input line 66.
 
 
 LaTeX Font Warning: Font shape `T2A/qpl/m/n' undefined
-(Font)              using `T2A/cmr/m/n' instead on input line 59.
+(Font)              using `T2A/cmr/m/n' instead on input line 66.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1888,8 +1888,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fi-pdflatex.bbl' not found.
 
 No file fi-pdflatex.bbl.
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: Reference section=0 on input line 86.
+Package biblatex Info: Reference segment=0 on input line 86.
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1914,7 +1914,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-LaTeX Info: Redefining \microtypecontext on input line 88.
+LaTeX Info: Redefining \microtypecontext on input line 86.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1929,7 +1929,7 @@ Package microtype Info: Redefining babel's language switching commands.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-ppl.cfg"
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 88.
+Package hyperref Info: Link coloring OFF on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1939,9 +1939,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count372
 )
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
-LaTeX Info: Redefining \nameref on input line 88.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
 
 (fi-pdflatex.out) (fi-pdflatex.out)
 \@outlinefile=\write7
@@ -1955,76 +1955,13 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<fithesis/logo/mu/fithesis-fi.pdf, id=76, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi.pdf, id=96, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi.pdf>
-Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 88
+Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 86
 .
 (pdftex.def)             Requested size: 113.81102pt x 114.20036pt.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 88.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
-File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-)<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 88.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 88.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 88.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)<<omx.cmap>>
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 25.92514pt on input line 88.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 88.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 88.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 25.92514pt on input line 88.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 88.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 88.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 88.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmss' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -2037,29 +1974,29 @@ is-fi.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{pa
 ge.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \begin{document}
+l.86 \begin{document}
                       [2
 
 
 ]
-<fithesis/logo/mu/fithesis-fi-color.pdf, id=96, 291.0875pt x 292.09125pt>
+<fithesis/logo/mu/fithesis-fi-color.pdf, id=110, 291.0875pt x 292.09125pt>
 File: fithesis/logo/mu/fithesis-fi-color.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi-color.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-fi-color.pdf used on input l
-ine 88.
+ine 86.
 (pdftex.def)             Requested size: 113.81102pt x 114.20036pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \begin{document}
+l.86 \begin{document}
                       [3 <./fithesis/logo/mu/fithesis-fi-color.pdf>]pdfTeX warn
 ing (ext4): destination with the same identifier (name{page.}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \begin{document}
+l.86 \begin{document}
                       [4
 
 
@@ -2067,7 +2004,7 @@ l.88 \begin{document}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \begin{document}
+l.86 \begin{document}
                       [-1
 
 
@@ -2075,7 +2012,7 @@ l.88 \begin{document}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \begin{document}
+l.86 \begin{document}
                       [0
 
 
@@ -2097,28 +2034,64 @@ l.88 \begin{document}
 
 
 ] (fi-pdflatex.toc
+
+LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
+(Font)              Font shape `T1/qpl/m/it' tried instead on input line 7.
+
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 7.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)<<ot1.cmap>>
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)<<oml.cmap>>
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)<<oms.cmap>>
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)<<omx.cmap>>
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 7.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 7.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `qpl' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 49.
 
-
-LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
-(Font)              Font shape `T1/qpl/m/it' tried instead on input line 25.
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 25.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 25.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 25.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 25.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 25.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 25.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 39.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -2126,7 +2099,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 39.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 49.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2157,101 +2130,116 @@ Package microtype Info: Loading generic settings for font family
 
 ]
 Kapitola 1.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 92.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 92.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 92.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 92.
+[1
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+qpl on input line 99.
+LaTeX Font Info:    No file OMSqpl.fd. on input line 99.
+
+
+LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 99.
+
+[2] [3] [4
+
+
+]
+Kapitola 2.
 LaTeX Font Info:    Try loading font information for T2A+PTSerif-TLF on input l
-ine 116.
+ine 151.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\paratype\t2aptserif-tlf.fd"
 File: T2APTSerif-TLF.fd 2014/02/02 Font definitions for T2A/PTSerif-TLF.
 )
 
 LaTeX Font Warning: Font shape `T2A/PTSerif-TLF/m/rm' undefined
-(Font)              using `T2A/PTSerif-TLF/m/n' instead on input line 116.
+(Font)              using `T2A/PTSerif-TLF/m/n' instead on input line 151.
 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `PTSerif-TLF' (encoding: T2A).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[1
-
-
-] [2
+[5] [6
 
 
 ]
-Kapitola 2.
-LaTeX Font Info:    Try loading font information for OMS+qpl on input line 126.
-
-LaTeX Font Info:    No file OMSqpl.fd. on input line 126.
-
-LaTeX Font Warning: Font shape `OMS/qpl/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 126.
-
+Kapitola 3.
 \c@theorem=\count373
 \c@definition=\count374
-[3] [4]
-Kapitola 3.
-<fithesis/logo/mu/fithesis-base.pdf, id=227, 286.06876pt x 285.065pt>
+[7] [8]
+Kapitola 4.
+<fithesis/logo/mu/fithesis-base.pdf, id=275, 286.06876pt x 285.065pt>
 File: fithesis/logo/mu/fithesis-base.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-base.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base.pdf used on input line 
-222.
+257.
 (pdftex.def)             Requested size: 113.81102pt x 113.41066pt.
 File: fithesis/logo/mu/fithesis-base.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-base.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base.pdf used on input line 
-230.
+265.
 (pdftex.def)             Requested size: 238.49231pt x 237.65652pt.
 File: fithesis/logo/mu/fithesis-base.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-base.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base.pdf used on input line 
-233.
+268.
 (pdftex.def)             Requested size: 119.24615pt x 118.82608pt.
 File: fithesis/logo/mu/fithesis-base.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-base.pdf>
 Package pdftex.def Info: fithesis/logo/mu/fithesis-base.pdf used on input line 
-234.
+269.
 (pdftex.def)             Requested size: 119.24615pt x 118.82608pt.
- [5
+ [9
 
 
- <./fithesis/logo/mu/fithesis-base.pdf>] [6]
-Kapitola 4.
+ <./fithesis/logo/mu/fithesis-base.pdf>] [10]
+Kapitola 5.
 
-Overfull \hbox (1.79585pt too wide) in paragraph at lines 315--317
+Overfull \hbox (1.79585pt too wide) in paragraph at lines 350--352
 []\T1/qpl/m/n/12 (-20) An equ-ation can be spread over mul-tiple li-nes using t
 he \T1/lmtt/m/n/12 multline
  []
 
-[7
+[11
 
 
 ]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 371.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 371.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 371.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 371.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 371.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 371.
-
-Underfull \hbox (badness 10000) in paragraph at lines 371--371
+Underfull \hbox (badness 10000) in paragraph at lines 406--406
 [][][][] \T1/qpl/m/n/10 (+20) See []$\T1/lmtt/m/n/10 http : / / mirrors . ctan 
 . org / macros / latex / required / amslatex / math /$
  []
 
-[8]
-Kapitola 5.
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 388
+[12]
+Kapitola 6.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 422
 .
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmss' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 423
+.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1tt.cmap>>
@@ -2264,79 +2252,79 @@ Package microtype Info: Loading generic settings for font family
 File: mt-euf.cfg 2006/07/03 v1.1 microtype config. file: AMS Euler Fraktur (RS)
 
 )
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 391
+LaTeX Font Info:    Try loading font information for U+fplmbb on input line 426
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ufplmbb.fd"
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [9
+) [13
 
 
-] [10
-
-
-]
-Kapitola 6.
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 400.
-
-
-LaTeX Warning: Citation 'incollection-full' on page 11 undefined on input line 
-401.
-
-
-LaTeX Warning: Citation 'whole-collection' on page 11 undefined on input line 4
-02.
-
-
-LaTeX Warning: Citation 'manual-minimal' on page 11 undefined on input line 402
-.
-
-
-LaTeX Warning: Citation 'manual-full' on page 11 undefined on input line 402.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 403.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 403.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 404.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 404.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 407.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 407.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 408.
-
-
-LaTeX Warning: Citation 'inbook-full' on page 11 undefined on input line 409.
-
-
-LaTeX Warning: Citation 'booklet-full' undefined on input line 412.
-
-
-LaTeX Warning: Empty bibliography on input line 443.
-
-[11] [12
+] [14
 
 
 ]
 Kapitola 7.
-[13] [14
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 435.
+
+
+LaTeX Warning: Citation 'incollection-full' on page 15 undefined on input line 
+436.
+
+
+LaTeX Warning: Citation 'whole-collection' on page 15 undefined on input line 4
+37.
+
+
+LaTeX Warning: Citation 'manual-minimal' on page 15 undefined on input line 437
+.
+
+
+LaTeX Warning: Citation 'manual-full' on page 15 undefined on input line 437.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 438.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 438.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 439.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 439.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 442.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 442.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 443.
+
+
+LaTeX Warning: Citation 'inbook-full' on page 15 undefined on input line 444.
+
+
+LaTeX Warning: Citation 'booklet-full' undefined on input line 447.
+
+
+LaTeX Warning: Empty bibliography on input line 478.
+
+[15] [16
+
+
+]
+Kapitola 8.
+[17] [18
 
 
 ]
 No file fi-pdflatex.ind.
 Dodatok A.
-[15
+[19
 
 
 ]
@@ -2346,13 +2334,13 @@ Package catoptions Warning: Undefined options
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
 (fi-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 527.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 527.
 Package rerunfilecheck Info: File `fi-pdflatex.out' has not changed.
-(rerunfilecheck)             Checksum: 313DC8D1C0A87EA47FF3BBE413822D3F;667.
+(rerunfilecheck)             Checksum: C5954145A717981CA29E878C963BE767;1653.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2368,11 +2356,11 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'fi-pdflatex.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 41371 strings out of 493698
- 743269 string characters out of 3144397
- 1294625 words of memory out of 3000000
- 43655 multiletter control sequences out of 15000+200000
- 157423 words of font info for 224 fonts, out of 3000000 for 9000
+ 41331 strings out of 493698
+ 742284 string characters out of 3144397
+ 1295454 words of memory out of 3000000
+ 43612 multiletter control sequences out of 15000+200000
+ 142040 words of font info for 204 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
  69i,11n,84p,10403b,1866s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Program Files
@@ -2398,9 +2386,9 @@ plr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplri.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on fi-pdflatex.pdf (33 pages, 402502 bytes).
+Output written on fi-pdflatex.pdf (37 pages, 417737 bytes).
 PDF statistics:
- 435 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 57072 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
+ 52504 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -2,7 +2,17 @@
 \defcounter {refsection}{0}\relax 
 \select@language {slovak}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}\bfseries Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}\bfseries Port\IeC {\'a}ly digit\IeC {\'a}lneho kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}\slshape Probl\IeC {\'e}my existuj\IeC {\'u}cich rie\IeC {\v s}en\IeC {\'\i }}{1}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}\rmfamily Zobrazenie kni\IeC {\v z}n\IeC {\'y}ch d\IeC {\'a}t}{1}{subsection.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}\rmfamily Realiz\IeC {\'a}cia vyh\IeC {\v l}ad\IeC {\'a}vania}{2}{subsection.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}\slshape Pou\IeC {\v c}enie o tvorbe port\IeC {\'a}lov kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{2}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}\bfseries Introduction}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
 \select@language {czech}
 \defcounter {refsection}{0}\relax 
@@ -20,28 +30,28 @@
 \defcounter {refsection}{0}\relax 
 \select@language {slovak}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\bfseries These are}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}\bfseries These are}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}\slshape the available}{3}{section.2.1}
+\contentsline {section}{\numberline {3.1}\slshape the available}{7}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}\rmfamily sectioning}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {3.1.1}\rmfamily sectioning}{7}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\rmfamily commands.}{3}{section*.8}
+\contentsline {subsubsection}{\rmfamily commands.}{7}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Paragraphs and}{3}{section*.9}
+\contentsline {paragraph}{\rmfamily Paragraphs and}{7}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\rmfamily subparagraphs are available as well.}{3}{section*.10}
+\contentsline {subparagraph}{\rmfamily subparagraphs are available as well.}{7}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\bfseries Floats and references}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}\bfseries Floats and references}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Mathematical equations}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}\bfseries Mathematical equations}{11}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries \textnormal {We \textsf {have} \texttt {several} \textsc {fonts} \textit {at} \textbf {disposal}}}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}\bfseries \textnormal {We \textsf {have} \texttt {several} \textsc {fonts} \textit {at} \textbf {disposal}}}{13}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}\bfseries Inserting the bibliography}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}\bfseries Inserting the bibliography}{15}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}\bfseries Inserting the index}{13}{chapter.7}
+\contentsline {chapter}{\numberline {8}\bfseries Inserting the index}{17}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Register}{15}{section*.13}
+\contentsline {chapter}{Register}{19}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries An appendix}{15}{appendix.A}
+\contentsline {chapter}{\numberline {A}\bfseries An appendix}{19}{appendix.A}
