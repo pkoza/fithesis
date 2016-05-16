@@ -38,6 +38,44 @@
 %% For non-Latin scripts, it may be necessary to load additional
 %% fonts:
 \usepackage{paratype}
+\usepackage{bera}% optional: just to have a nice mono-spaced font
+\usepackage{listings}
+\usepackage{xcolor}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+\lstdefinelanguage{json}{
+	basicstyle=\normalfont\ttfamily,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	showstringspaces=false,
+	breaklines=true,
+	frame=lines,
+	backgroundcolor=\color{background},
+	literate=
+	*{0}{{{\color{numb}0}}}{1}
+	{1}{{{\color{numb}1}}}{1}
+	{2}{{{\color{numb}2}}}{1}
+	{3}{{{\color{numb}3}}}{1}
+	{4}{{{\color{numb}4}}}{1}
+	{5}{{{\color{numb}5}}}{1}
+	{6}{{{\color{numb}6}}}{1}
+	{7}{{{\color{numb}7}}}{1}
+	{8}{{{\color{numb}8}}}{1}
+	{9}{{{\color{numb}9}}}{1}
+	{:}{{{\color{punct}{:}}}}{1}
+	{,}{{{\color{punct}{,}}}}{1}
+	{\{}{{{\color{delim}{\{}}}}{1}
+	{\}}{{{\color{delim}{\}}}}}{1}
+	{[}{{{\color{delim}{[}}}}{1}
+	{]}{{{\color{delim}{]}}}}{1},
+}
+
 \def\textrussian#1{{\usefont{T2A}{PTSerif-TLF}{m}{rm}#1}}
 %%
 %% The following section sets up the metadata of the thesis.
@@ -48,7 +86,7 @@
     type          = bc,
     author        = Peter Koza,
     gender        = m,
-    advisor       = Jaroslav Ráček,
+    advisor       = RNDr. Jaroslav Ráček{,} Ph.D.,
     title         = {Portál digitálního kulturního dědictví},
     TeXtitle      = {Portál digitálního kulturního dědictví},
     keywords      = {keyword1, keyword2, ...},
@@ -115,40 +153,147 @@ Z analýzy existujúcich nástrojov na prehliadanie kultúrneho dedičstva bolo 
 			\item zobrazenie náhľadu dokumentov
 			\item rezervácia knihy
 		\end{itemize}
-	\end{itemize}
-	
-	
-	
+	\end{itemize}	
 \end{itemize}
 
-\chapter{Introduction}
-Theses are rumoured to be the capstones of education, so I decided
-to write one of my own. If all goes well, I will soon have a
-diploma under my belt. Wish me luck!
+\chapter{Analýza}
+\section{Požiadavky zákazníka}
+Po komunikácii so zákazíkom na AWS boli zistené požiadavky zákazníka zobrazené diagramom na obrázku 546846
 
-\begin{otherlanguage}{czech}
-Říká se, že závěrečné práce jsou vyvrcholením studia a tak jsem se
-rozhodl jednu také napsat. Pokud vše půjde podle plánu, odnesu si
-na konci semestru diplom. Držte mi palce!
-\end{otherlanguage}
+Use case diagram jak hovado
 
-\begin{otherlanguage}{slovak}
-Hovorí sa, že záverečné práce sú vyvrcholením štúdia a tak som sa
-rozhodol jednu tiež napísať. Ak všetko pôjde podľa plánu, odnesiem
-si na konci semestra diplom. Držte mi palce!
-\end{otherlanguage}
+\subsection{Kategórie dokumentov}
+Dokumenty , ktoré sú predmetom prípravy a zverejnenia prostredníctvom portálu digitálneho kultúrneho dedičstva(ďalej už len PD) sú rozdelené do dvoch základných kategórií:
+\begin{itemize}
+	\item dokumenty archívnych fondov a múzejných zbierok				
+	\item dokumenty knižničných fondov podľa štandardov NDK\footnote{Národní digitální knihovna}
+\end{itemize}
+Pre vyššie uvedené jednotlivé kategórie je nutné použiť v PD rozdielne pracovné postupy a to hlavne v prípravnej fáze pred zverejnením. Dôvodom je samotná podstata dokumentu z pohľadu toho, či ide o dokumenty, ktoré sú v nemennej podobe (monografie, periodiká) alebo dokumenty, u ktorých sa v čase môžu meniť predovšetkým ich popisné informácie. Pre každú kategóriu sú taktiež definované odlišné dátové štruktúry metadát. Predpokladaný objem dokumentov spravovaných PD je 100 000 jednotlivých dokumentov, 1 500 000 strán prepočítaných na formát A4 a približne 20 terabajtov obrazových dát.
+\subsection{Dokumenty archívnych fondov a múzejných zbierok}
+Druhy dokumentov:
+\begin{itemize}
+	\item fotografie, negatívy				
+	\item zväzky - kroniky, zápisy, katalógy
+	\item voľné archy - dokumenty, plagáty, plány
+	\item staré výtlačky, spevníky
+	\item kartografický materiál 
+	\item filmy, zvukové nahrávky 
+	\item zbierkové predmety	
+\end{itemize}
+Jedná sa o dokumenty, ktoré vznikli digitalizáciou vybraných archívnych fondov a múzejných zbierok. Z hľadiska nemennosti týchto dokumentov sa jedná o dokumenty premenlivej povahy. Popisné metadáta z KDJ\footnote{Krajská digitalizační jednotka} pre PD u tejto kategórie preto nie je možné použiť. Jedná se teda o dokumenty, u ktorých je nutné ručné doplnenie metadát. 
 
-\begin{otherlanguage}{german}
-Man munkelt, dass die Dissertation die Krönung der Ausbildung ist.
-Deshalb habe ich mich beschlossen meine eigene zu schreiben. Wenn
-alles gut geht, bekomme ich bald ein Diplom. Wünsch mir Glück!
-\end{otherlanguage}
+\subsection{Dokumenty knižničných fondov podľa štandardov NDK}
+Druhy dokumentov:
+\begin{itemize}
+	\item monografie - jednodielne alebo viacdielne knižné dokumenty			
+	\item periodiká - pravidelne vychádzajúce výtlačky
+\end{itemize}
+Jedná sa o dokumenty prevažne nemennej povahy. Predpokladá se teda, že ako uložené digitálne obrazy, tak metadáta majú konečný a nemenný stav. Všetky tieto dokumenty sú uložené v úložisku KDJ vo formáte SIP. KDJ bude pre tento typ dokumentov zdrojovým poskytovateľom informácií pre PD. 
+\subsection{Typy dokumentov} 
+Z hľadiska typu súborov, v ktorých sú digitálne dokumenty uložené, se jedná o dokumenty:
+\begin{itemize}
+	\item obrazové			
+	\item videá
+	\item zvukové záznamy
+	\item vo formáte XML(popisné metadáta)		
+	\item vo formáte PDF
+\end{itemize}
+\subsection{Vstup dokumentov} 
+Táto časť PD bude zabezpečovať riadený import dát pre prípravu sprístupnenia dokumentov. Vstupné mechanizmy budú rešpektovať potreby jednotlivých kategórií dokumentu. Po importe budú dáta pripravených dokumentov uložené do zverejňovacej databázy. Princíp predávania dokumentov, detailný popis rozhrania a jeho dátová štruktúra bude súčasťou implementačnej analýzy. Zákazník špecifikoval nasledujúce podmienky:
+\begin{itemize}
+	\item PD bude umožňovať import viacerých dokumentov súčasne.
+	\item Pri zahájení prípravy vstupu dokumentu do PD bude prevedená kontrola duplicity s predchádzajúcimi importovanými dokumentmi.
+	\item Behom importu dokumentu do PD systém priradí jeho vlastníka – osobu kompletne zodpovednú za celé sprístupnenie a zverejnenie. Vlastníkom se stáva užívateľ PD, ktorý import úspešne dokončil. Zdrojom dát pre import bude mimo iných webové rozhranie PD a zdieľané diskové zložky unikátne pre každého administrátora.
+	\item PD bude disponovať funkciou pre import a aktualizáciu popisných metadát a prípadných obrazových dát zo systému JANUS2000 (evidenčný systém okresných archívov) a systému VISMO (dáta projektu MG Vysočiny on-line).
+\end{itemize}
+\subsection{Príprava dokumentov k sprístupneniu}
+Táto časť PD bude zahŕňať proces sprístupnenia dokumentov a možnosť ich úpravy pred zverejním. Zákazník špecifikoval nasledujúce funkcie:
+\begin{itemize}
+	\item PD po prihlásení do časti pre prípravu dokumentu ponúkne oprávnenému užívateľovi zoznam všetkých jeho dokumentov s informáciou o ich stave a možnosťou zverejnenia dokumentu pre všetkých užívateľov.
+	\item PD umožní oprávnenému užívateľovi zobraziť náhľad upraveného dokumentu, znázorňujúci stav, v ktorom bude dokument zverejnený.
+	\item PD umožňuje oprávnenému užívateľovi kedykoľvek zrušiť zverejnenie dokumentu. 
+	\item Oprávnený užívateľ, vlastník dokumentu, má na karte otvoreného dokumentu k dispozícii históriu úprav.
+	\item Portál PD umožní oprávnenému užívateľovi možnosť úpravy popisných dát podľa úrovne jeho oprávnení.
+	\item Štruktúra dokumentu bude navrhnutá podľa štandardu Dublin Core.
+	\item Všetky dôležité akcie PD ako sprístupnenie, úprava alebo zmazanie dokumentu budú sprevádzané notifikačným e-mailom pre všetkých dotknutých užívateľov.
+\end{itemize}
+\subsection{Operácie nad zverejnenými dokumentmi}
+Táto časť portálu obsahuje funkcie dostupné pre širokú verejnosť, tzn. registrovaných a neregistrovaných užívateľov. Zákazník špecifikoval nasledujúce funkcie, dostupné všetkým užívateľom:
+\begin{itemize}
+	\item PD bude poskytovať možnosť vyhľadávania v celom texte.
+	\item PD bude poskytovať možnosť vyhľadávania podľa konkrétnych atribútov.
+	\item PD umožní export obsahu príslušného dokumentu do PDF súboru.
+\end{itemize}
+Nasledujúce funkcie budú dostupné všetkým registrovaným užívateľom:
+\begin{itemize}
+	\item Možnosti pre užívateľský popis príslušného dokumentu. Ide o diskusiu k dielu a prepis nerozpoznaného textu dokumentu.
+	\item PD umožní rezerváciu diela pre vypožičanie.
+\end{itemize}
+\section{Návrh riešenia}
+Na základe analýzy existujúcich nástrojov na prehliadanie digitálnych fondov a komunikácie so zákazníkom bol vytvorený konečný návrh projektu. Pre implementáciu PD bude využité open source
+portálové riešenie \textit{Liferay} vo verzii \textit{6.2.2 community edition GA3}. Prípadný prechod na vyššiu verziu je možný prostredníctvom štandardných postupov pre portál Liferay a nieje zahrnutý v rozsahu tohto projektu. Zaznamenávanie operácií v PD bude zabezpečené pomocou frameworku pre Java aplikácie \textit{Log4j}. Výstupné hlášky sú štandardne zaznamenávané do súboru na aplikačnom serveri, na ktorom aplikácia beží. Jednotlivé hlášky budú rozdelené do úrovní. Nastavovanie týchto úrovní bude možné prostredníctvom administračného rozhrania portálu Liferay. Administrácia zverejňovania digitálneho obsahu bude dostupná všetkým oprávneným užívateľom. Vyhľadávanie bude dostupné všetkým užívateľom bez ohľadu na ich identitu.
 
-\begin{otherlanguage}{russian}\textrussian{%
-Говорят, что тезис -- это кульминация обучения. Поэтому я и решил
-написать собственный тезис. Если всё сработает по плану, я скоро
-получу диплом. Желайте мне удачи!
-}\end{otherlanguage}
+\subsection{Grafický vzhľad}
+Grafický vzhľad aplikácie bude meniteľný pomocou špeciálnych zásuvných modulov podporovaných portálom Liferay (tzv. témy). Zmena vzhľadu vyžaduje vývoj alebo úpravu zásuvného modulu.
+\chapter{Technológie}
+\section{Indexácia}
+\subsection{Výber vyhľadávacieho nástroja}
+Pre potreby indexácie boli v analytickej fáze zvažované tieto možnosti:
+\begin{itemize}
+	\item \textit{Elastic} – vyhľadávací nástroj postavený na Java knižnici \textit{Apache Lucene}
+	\item \textit{Sphinx} – vyhľadávací nástroj vytvorený v jazyku C++
+\end{itemize}
+Po konzultácii s vývojovým tímom sa nakoniec rozhodlo pre \textit{Elastic} z dôvodu vyššej spoľahlivosti a jednoduchého používania.
+\subsection{Elastic}
+Elastic je nástroj na indexáciu dát. Jeho primárnym účelom je vyhľadávanie nad relatívne veľkým množstvom textu. Oproti databáze ponúka oveľa rýchlejšiu odpoveď a rozvinutejšie možnosti štrukturovaného ukladania dát. 
+
+Aplikácie využívajúce Elastic s ním komunikujú pomocou HTTP protokolu a dotazy ako  aj odpovede sú vo formáte JSON. Príklad dotazu na Elastic:
+
+
+\begin{lstlisting}[language=json,firstnumber=1]
+GET
+{
+"query" : {
+	"term" : { "gender": "female" },
+	"range" : {
+		"age" : {
+		"from" : 20,
+		"to" : 30
+		}
+	} 
+}}
+	\end{lstlisting}
+Tento dotaz vyhľadá všetky záznamy s uvedenými parametrami. \textit{Term} je označenie výrazu, ktorý vyžaduje presný obsah určitého atribútu. \textit{Range} vyhľadá všetky záznamy ktoré sa nachádzajú v určenom rozmedzí. V tomto prípade hľadáme ženu od 20 do 30 rokov. Odpoveďou na takýto dotaz by mohlo byť napríklad:
+\begin{lstlisting}[language=json,firstnumber=1]
+"hits":{
+  "total" : 1, 
+	"hits" : [
+		  {"_index" : "pdkd",
+		   "_type" : "person",
+		   "_id" : "1",
+		   "_source" : { 
+			  "name" : "Kim", 
+			  "age" : 22,
+			  "gender" : "female" 
+		  }
+	} 
+	]
+}
+\end{lstlisting}
+Výsledkom dotazu je teda 1 záznam. 
+\subsection{Ďalšie možnosti vyhľadávania}							
+\paragraph{Radenie}
+Poradie vrátených záznamov môže byť vytvorené na základe určitého atribútu, relevancie výsledku alebo kombinácie týchto faktorov.
+\paragraph{Score}
+Ďalšou zaujímavou funkciou elasticu je \textit{relevance scoring}. Po tom čo získame zoznam vyhovujúcich záznamov, je potrebné ich zoradiť podľa relevancie. V prípade kombinovaného dotazu s logickými spojkami neobsahuje každý záznam všetky podmienky. Skóre relevancie sa počíta na základe troch faktorov:
+\begin{compactenum}
+	\item \textbf{Frekvencia výskytu hľadaného výrazu v zázname} - čím viac je v zázname zmienená, tým je záznam podstatnejší.
+	\item \textbf{Inverzná frekvencia hľadaného výrazu} – relevancia výrazu sa znižuje v závislosti od množstva záznamov obsahujúcich tento výraz.
+	\item \textbf{Rozsah atribútu , v ktorom bol výraz nájdený} – čím je obsah atribútu dlhší, tým je relevancia tohto výskytu nižšia
+\end{compactenum}
+\paragraph{Aggregations}			
+Výsledky vyhľadávania je niekedy potrebné zlučovať do skupín na základe určitého parametru. \textit{Elastic} ponúka funkciu \textit{Aggregations}. Pokiaľ je teda v dotaze špecifikovaný atribút, na základe ktorého sa majú záznamy zoskupovať je výsledkom objekt obsahujúci niekoľko skupín ďalších objektov, ktoré môžu predstavovať samotné záznamy alebo ďalšie skupiny zjednotení. Vďaka formátu JSON je možné tieto objekty serializovať. V prípade objektových jazykov ako Java je potom jednoduché poskladať štruktúry, s ktorými jazyk pracuje pomocou knižnice na deserializáciu.  
+
 
 \chapter{These are}
 \section{the available}

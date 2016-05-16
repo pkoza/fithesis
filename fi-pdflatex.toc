@@ -12,46 +12,66 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}\slshape Pou\IeC {\v c}enie o tvorbe port\IeC {\'a}lov kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\bfseries Introduction}{5}{chapter.2}
+\contentsline {chapter}{\numberline {2}\bfseries Anal\IeC {\'y}za}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\select@language {czech}
+\contentsline {section}{\numberline {2.1}\slshape Po\IeC {\v z}iadavky z\IeC {\'a}kazn\IeC {\'\i }ka}{5}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\select@language {slovak}
+\contentsline {subsection}{\numberline {2.1.1}\rmfamily Kateg\IeC {\'o}rie dokumentov}{5}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\select@language {slovak}
+\contentsline {subsection}{\numberline {2.1.2}\rmfamily Dokumenty arch\IeC {\'\i }vnych fondov a m\IeC {\'u}zejn\IeC {\'y}ch zbierok}{5}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\select@language {slovak}
+\contentsline {subsection}{\numberline {2.1.3}\rmfamily Dokumenty kni\IeC {\v z}ni\IeC {\v c}n\IeC {\'y}ch fondov pod\IeC {\v l}a \IeC {\v s}tandardov NDK}{6}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\select@language {german}
+\contentsline {subsection}{\numberline {2.1.4}\rmfamily Typy dokumentov}{6}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\select@language {slovak}
+\contentsline {subsection}{\numberline {2.1.5}\rmfamily Vstup dokumentov}{7}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\select@language {russian}
+\contentsline {subsection}{\numberline {2.1.6}\rmfamily Pr\IeC {\'\i }prava dokumentov k spr\IeC {\'\i }stupneniu}{7}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\select@language {slovak}
+\contentsline {subsection}{\numberline {2.1.7}\rmfamily Oper\IeC {\'a}cie nad zverejnen\IeC {\'y}mi dokumentmi}{8}{subsection.2.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\bfseries These are}{7}{chapter.3}
+\contentsline {section}{\numberline {2.2}\slshape N\IeC {\'a}vrh rie\IeC {\v s}enia}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}\slshape the available}{7}{section.3.1}
+\contentsline {subsection}{\numberline {2.2.1}\rmfamily Grafick\IeC {\'y} vzh\IeC {\v l}ad}{9}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}\rmfamily sectioning}{7}{subsection.3.1.1}
+\contentsline {chapter}{\numberline {3}\bfseries Technol\IeC {\'o}gie}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\rmfamily commands.}{7}{section*.8}
+\contentsline {section}{\numberline {3.1}\slshape Index\IeC {\'a}cia}{11}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Paragraphs and}{7}{section*.9}
+\contentsline {subsection}{\numberline {3.1.1}\rmfamily V\IeC {\'y}ber vyh\IeC {\v l}ad\IeC {\'a}vacieho n\IeC {\'a}stroja}{11}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\rmfamily subparagraphs are available as well.}{7}{section*.10}
+\contentsline {subsection}{\numberline {3.1.2}\rmfamily Elastic}{11}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries Floats and references}{9}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.3}\rmfamily \IeC {\v D}al\IeC {\v s}ie mo\IeC {\v z}nosti vyh\IeC {\v l}ad\IeC {\'a}vania}{12}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries Mathematical equations}{11}{chapter.5}
+\contentsline {paragraph}{\rmfamily Radenie}{12}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}\bfseries \textnormal {We \textsf {have} \texttt {several} \textsc {fonts} \textit {at} \textbf {disposal}}}{13}{chapter.6}
+\contentsline {paragraph}{\rmfamily Score}{12}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}\bfseries Inserting the bibliography}{15}{chapter.7}
+\contentsline {paragraph}{\rmfamily Aggregations}{13}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}\bfseries Inserting the index}{17}{chapter.8}
+\contentsline {chapter}{\numberline {4}\bfseries These are}{15}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Register}{19}{section*.13}
+\contentsline {section}{\numberline {4.1}\slshape the available}{15}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries An appendix}{19}{appendix.A}
+\contentsline {subsection}{\numberline {4.1.1}\rmfamily sectioning}{15}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\rmfamily commands.}{15}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\rmfamily Paragraphs and}{15}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subparagraph}{\rmfamily subparagraphs are available as well.}{15}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}\bfseries Floats and references}{17}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}\bfseries Mathematical equations}{19}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}\bfseries \textnormal {We \textsf {have} \texttt {several} \textsc {fonts} \textit {at} \textbf {disposal}}}{21}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}\bfseries Inserting the bibliography}{23}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}\bfseries Inserting the index}{25}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Register}{27}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\bfseries An appendix}{29}{appendix.A}
