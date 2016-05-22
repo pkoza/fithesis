@@ -4,74 +4,100 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}\bfseries Port\IeC {\'a}ly digit\IeC {\'a}lneho kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}\slshape Probl\IeC {\'e}my existuj\IeC {\'u}cich rie\IeC {\v s}en\IeC {\'\i }}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}\slshape Realiz\IeC {\'a}cia vyh\IeC {\v l}ad\IeC {\'a}vania}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}\rmfamily Zobrazenie kni\IeC {\v z}n\IeC {\'y}ch d\IeC {\'a}t}{1}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}\slshape Smerovanie port\IeC {\'a}lov kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{2}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}\rmfamily Realiz\IeC {\'a}cia vyh\IeC {\v l}ad\IeC {\'a}vania}{2}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}\bfseries Anal\IeC {\'y}za}{3}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}\slshape Pou\IeC {\v c}enie o tvorbe port\IeC {\'a}lov kult\IeC {\'u}rneho dedi\IeC {\v c}stva}{2}{section.1.2}
+\contentsline {section}{\numberline {2.1}\slshape Po\IeC {\v z}iadavky z\IeC {\'a}kazn\IeC {\'\i }ka}{3}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\bfseries Anal\IeC {\'y}za}{5}{chapter.2}
+\contentsline {subsection}{\numberline {2.1.1}\rmfamily Kateg\IeC {\'o}rie dokumentov}{3}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}\slshape Po\IeC {\v z}iadavky z\IeC {\'a}kazn\IeC {\'\i }ka}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.2}\rmfamily Dokumenty arch\IeC {\'\i }vnych fondov a m\IeC {\'u}zejn\IeC {\'y}ch zbierok}{4}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}\rmfamily Kateg\IeC {\'o}rie dokumentov}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.3}\rmfamily Dokumenty kni\IeC {\v z}ni\IeC {\v c}n\IeC {\'y}ch fondov pod\IeC {\v l}a \IeC {\v s}tandardov NDK}{4}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}\rmfamily Dokumenty arch\IeC {\'\i }vnych fondov a m\IeC {\'u}zejn\IeC {\'y}ch zbierok}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.4}\rmfamily Typy dokumentov}{5}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}\rmfamily Dokumenty kni\IeC {\v z}ni\IeC {\v c}n\IeC {\'y}ch fondov pod\IeC {\v l}a \IeC {\v s}tandardov NDK}{6}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.5}\rmfamily Vstup dokumentov}{5}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}\rmfamily Typy dokumentov}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.6}\rmfamily Pr\IeC {\'\i }prava dokumentov k spr\IeC {\'\i }stupneniu}{6}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.5}\rmfamily Vstup dokumentov}{7}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.7}\rmfamily Oper\IeC {\'a}cie nad zverejnen\IeC {\'y}mi dokumentmi}{7}{subsection.2.1.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.6}\rmfamily Pr\IeC {\'\i }prava dokumentov k spr\IeC {\'\i }stupneniu}{7}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}\slshape N\IeC {\'a}vrh rie\IeC {\v s}enia}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.7}\rmfamily Oper\IeC {\'a}cie nad zverejnen\IeC {\'y}mi dokumentmi}{8}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.2.1}\rmfamily Grafick\IeC {\'y} vzh\IeC {\v l}ad}{8}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}\slshape N\IeC {\'a}vrh rie\IeC {\v s}enia}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.2}\rmfamily Komunik\IeC {\'a}cia s extern\IeC {\'y}mi syst\IeC {\'e}mami}{8}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}\rmfamily Grafick\IeC {\'y} vzh\IeC {\v l}ad}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}\rmfamily Digit\IeC {\'a}lny objekt}{8}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\bfseries Technol\IeC {\'o}gie}{11}{chapter.3}
+\contentsline {subsection}{\numberline {2.2.4}\rmfamily Typy objektov z h\IeC {\v l}adiska \IeC {\v s}trukt\IeC {\'u}ry}{9}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}\slshape Index\IeC {\'a}cia}{11}{section.3.1}
+\contentsline {subsubsection}{\numberline {2.2.4.1}\rmfamily Jednoduch\IeC {\'y} objekt}{9}{subsubsection.2.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}\rmfamily V\IeC {\'y}ber vyh\IeC {\v l}ad\IeC {\'a}vacieho n\IeC {\'a}stroja}{11}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}\rmfamily Hierarchick\IeC {\'y} objekt}{10}{subsubsection.2.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}\rmfamily Elastic}{11}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}\rmfamily Listov\IeC {\'y} objekt}{10}{subsubsection.2.2.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}\rmfamily \IeC {\v D}al\IeC {\v s}ie mo\IeC {\v z}nosti vyh\IeC {\v l}ad\IeC {\'a}vania}{12}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {2.2.5}\rmfamily Typy objektov z h\IeC {\v l}adiska obsahu}{11}{subsection.2.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Radenie}{12}{section*.8}
+\contentsline {subsection}{\numberline {2.2.6}\rmfamily N\IeC {\'a}vrh dizajnu}{11}{subsection.2.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Score}{12}{section*.9}
+\contentsline {subsubsection}{\numberline {2.2.6.1}\rmfamily \IeC {\'U}vodn\IeC {\'a} str\IeC {\'a}nka port\IeC {\'a}lu}{11}{subsubsection.2.2.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Aggregations}{13}{section*.10}
+\contentsline {subsubsection}{\numberline {2.2.6.2}\rmfamily Stru\IeC {\v c}n\IeC {\'y} detail objektu}{12}{subsubsection.2.2.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\bfseries These are}{15}{chapter.4}
+\contentsline {subsubsection}{\numberline {2.2.6.3}\rmfamily Pln\IeC {\'y} detail objektu}{13}{subsubsection.2.2.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}\slshape the available}{15}{section.4.1}
+\contentsline {subsubsection}{\numberline {2.2.6.4}\rmfamily Rozhranie pre import d\IeC {\'a}t zo syst\IeC {\'e}mu Sirius a Vismo}{14}{subsubsection.2.2.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}\rmfamily sectioning}{15}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {2.2.6.5}\rmfamily Spr\IeC {\'a}va pam\IeC {\"a}\IeC {\v t}ov\IeC {\'y}ch in\IeC {\v s}tit\IeC {\'u}ci\IeC {\'\i }}{15}{subsubsection.2.2.6.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\rmfamily commands.}{15}{section*.11}
+\contentsline {chapter}{\numberline {3}\bfseries Technol\IeC {\'o}gie}{17}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\rmfamily Paragraphs and}{15}{section*.12}
+\contentsline {section}{\numberline {3.1}\slshape Index\IeC {\'a}cia}{17}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subparagraph}{\rmfamily subparagraphs are available as well.}{15}{section*.13}
+\contentsline {subsection}{\numberline {3.1.1}\rmfamily V\IeC {\'y}ber vyh\IeC {\v l}ad\IeC {\'a}vacieho n\IeC {\'a}stroja}{17}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\bfseries Floats and references}{17}{chapter.5}
+\contentsline {subsection}{\numberline {3.1.2}\rmfamily Elastic}{17}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}\bfseries Mathematical equations}{19}{chapter.6}
+\contentsline {subsection}{\numberline {3.1.3}\rmfamily \IeC {\v D}al\IeC {\v s}ie mo\IeC {\v z}nosti vyh\IeC {\v l}ad\IeC {\'a}vania}{18}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}\bfseries \textnormal {We \textsf {have} \texttt {several} \textsc {fonts} \textit {at} \textbf {disposal}}}{21}{chapter.7}
+\contentsline {subsubsection}{\numberline {3.1.3.1}\rmfamily Radenie}{18}{subsubsection.3.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}\bfseries Inserting the bibliography}{23}{chapter.8}
+\contentsline {subsubsection}{\numberline {3.1.3.2}\rmfamily Score}{18}{subsubsection.3.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}\bfseries Inserting the index}{25}{chapter.9}
+\contentsline {subsubsection}{\numberline {3.1.3.3}\rmfamily Aggregations}{19}{subsubsection.3.1.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Register}{27}{section*.16}
+\contentsline {section}{\numberline {3.2}\slshape OAI-PMH}{19}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\bfseries An appendix}{29}{appendix.A}
+\contentsline {section}{\numberline {3.3}\slshape Z39.50}{20}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}\slshape Port\IeC {\'a}l}{20}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}\rmfamily Pou\IeC {\v z}itie port\IeC {\'a}lu}{20}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}\rmfamily Port\IeC {\'a}lov\IeC {\'e} technol\IeC {\'o}gie}{20}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}\slshape Datab\IeC {\'a}zov\IeC {\'y} syst\IeC {\'e}m}{21}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}\slshape Liferay portal}{21}{section.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\bfseries Implement\IeC {\'a}cia}{23}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}\slshape Vyu\IeC {\v z}it\IeC {\'e} portlety Liferay Portal}{23}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}\slshape \IeC {\v S}trukt\IeC {\'u}ra aplik\IeC {\'a}cie}{23}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}\slshape Digit\IeC {\'a}lny objekt}{24}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}\slshape Controller}{25}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}\slshape Pr\IeC {\'\i }klad fungovania aplik\IeC {\'a}cie}{25}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}\slshape Uk\IeC {\'a}\IeC {\v z}ka k\IeC {\'o}du}{26}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}\bfseries Z\IeC {\'a}ver}{29}{chapter.5}

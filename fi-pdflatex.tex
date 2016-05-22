@@ -7,7 +7,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[
-  digital, %% This option enables the default options for the
+  print, %% This option enables the default options for the
            %% digital version of a document. Replace with `printed`
            %% to enable the default options for the printed version
            %% of a document.
@@ -15,7 +15,7 @@
            %% to restore plain tables.
   lof,     %% Prints the List of Figures. Replace with `nolof` to
            %% hide the List of Figures.
-  lot,     %% Prints the List of Tables. Replace with `nolot` to
+  nolot,     %% Prints the List of Tables. Replace with `nolot` to
            %% hide the List of Tables.
   %% More options are listed in the user guide at
   %% <http://mirrors.ctan.org/macros/latex/contrib/fithesis/guide/mu/fi.pdf>.
@@ -41,6 +41,10 @@
 \usepackage{bera}% optional: just to have a nice mono-spaced font
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage[font={small,it}]{caption}
+\usepackage[labelfont=bf]{caption}
+\usepackage{float}
+
 
 \colorlet{punct}{red!60!black}
 \definecolor{background}{HTML}{EEEEEE}
@@ -76,6 +80,24 @@
 	{]}{{{\color{delim}{]}}}}{1},
 }
 
+\lstdefinestyle{java-nice}{
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\footnotesize\ttfamily},
+	numberstyle={\small},
+	numbers=left,
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{violet},
+	backgroundcolor=\color{background},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
 \def\textrussian#1{{\usefont{T2A}{PTSerif-TLF}{m}{rm}#1}}
 %%
 %% The following section sets up the metadata of the thesis.
@@ -89,16 +111,14 @@
     advisor       = RNDr. Jaroslav Ráček{,} Ph.D.,
     title         = {Portál digitálního kulturního dědictví},
     TeXtitle      = {Portál digitálního kulturního dědictví},
-    keywords      = {keyword1, keyword2, ...},
-    TeXkeywords   = {keyword1, keyword2, \ldots},
+    keywords      = {digitalizácia dokumentov, webový portál, kultúrne dedičstvo, indexácia},
+    TeXkeywords   = {digitalizácia dokumentov, webový portál, kultúrne dedičstvo, indexácia},
 }
 \thesislong{abstract}{
-    Popsat principy digitalizace a publikování oběktů kulturního dědictví. Zaměřit se na tuto problematiku zejména z pohledu regionálních institucí v České republice. Popsat a analyzovat možnosti využití technologie Liferay Portal pro zpracování a publikování záznamů o objektech kulturního dědictví. V praktické části analyzovat, navrhnout, implementovat a nasadit do provozu prototyp konkrétního portálu kulturního dědictví. Analýza a návrh systému bude nad modely UML, implementace bude v Liferay Portál. V rámci práce řešit i vyhledávání nad automaticky rozpoznanými texty jednotlivých objektů a import dat z prostředí vybrané instituce.
+    Popsat principy digitalizace a publikování objektů kulturního dědictví. Zaměřit se na tuto problematiku zejména z pohledu regionálních institucí v České republice. Popsat a analyzovat možnosti využití technologie Liferay Portal pro zpracování a publikování záznamů o objektech kulturního dědictví.
 }
 \thesislong{thanks}{
-    This is the acknowledgement for my thesis, 
-    
-    which can never span multiple paragraphs.
+Ďakujem
 }
 %% The following section sets up the bibliography.
 \usepackage{csquotes}
@@ -121,17 +141,19 @@
 \usepackage{amsfonts}
 \usepackage{url}
 \usepackage{menukeys}
+
+\usepackage{titlesec}
+
+
 \begin{document}
 \chapter{Portály digitálneho kultúrneho dedičstva}	
-Zámerom tejto iniciatívy je vytvoriť webový portál, ktorého prostredníctvom bude zaisťovaná príprava a samotné sprístupnenie digitálneho obsahu vybraných fondov pamäťových inštitúcií pôsobiacich na území Českej republiky širokej verejnosti a odborným bádateľom. Ďalej bude umožňovať on-line úpravu metadát a možnosť priloženia ďalších materiálov ktoré s dokumentom súvisia. Web by mal užívateľa zaujať a vytvoriť dojem jednoducho používateľnej interaktívnej stránky aj u používateľa, ktorého daná tématika nezaujíma.
-\section{Problémy existujúcich riešení}
-Digitálny obsah sa primárne skladá z kníh. Problémom existujúcich nástrojov na prehliadanie tohto obsahu je nepríťažlivosť pre užívateľa. 
-\subsection{Zobrazenie knižných dát}
+Zámerom tejto iniciatívy je vytvoriť webový portál, ktorého prostredníctvom bude zaisťovaná príprava a samotné sprístupnenie digitálneho obsahu vybraných fondov pamäťových inštitúcií pôsobiacich na území Českej republiky širokej verejnosti a odborným bádateľom. Ďalej bude umožňovať on-line úpravu metadát a možnosť priloženia ďalších materiálov ktoré s dokumentom súvisia. Web by mal užívateľa zaujať a vytvoriť dojem jednoducho používateľnej interaktívnej stránky aj u používateľa, ktorého daná tématika nezaujíma. Digitálny obsah sa primárne skladá z kníh. Problémom existujúcich nástrojov na prehliadanie tohto obsahu je nepríťažlivosť pre užívateľa. 
+
 Tabuľkové zobrazenie knižných záznamov nespĺňa požiadavky modernej webovej aplikácie. Príkladom je katalóg Slezského zemského múzea\footnote{Viď \url{http://knihovna.szmo.cz/katalog/}.}. Vyhľadávanie je realizované jedným formulárom. Výsledky sú zobrazované jednoduchou tabuľkou, ktorá poskytuje minimum informácií o dokumente a jeho uložení. V tabuľke sú ako prvé uvedené informácie Dok a Sign, ktorých názvy sú neintuitívne a teda pre koncového užívateľa pri prvom prístupe na web nepodstatné. Ďalej sú zobrazené údaje autor, názov, časť, rok a počet. Zvyšok údajov je zobrazený až po kliknutí na názov dokumentu. Ostatné atribúty sú neaktívne. V detaile dokumentu chýbajú užívateľsky príťažlivé prvky, ako napríklad mapa uloženia, diskusia k dielu, možnosť rezervácie alebo zobrazenie skenovaných obrázkov. Aj napriek tomu, že tento web podáva hodnoverné informácie o dokumentoch, nie je možné ho označiť za užívateľsky príťažlivý a po prvom použití nenavádza užívateľa k ďalšej návšteve.
-\subsection{Realizácia vyhľadávania}
+\section{Realizácia vyhľadávania}
 Na stránke systému Kramerius\footnote{Viď \url{http://kramerius.nkp.cz/kramerius/Welcome.do}.} je sprístupnené vyhľadávanie dokumentov Národnej knižnice Českej republiky. Užívateľské rozhranie je oproti predošlému webu obohatené o funkciu hľadania v celom texte, ktorá umožňuje jednoduchšie zoznámenie sa s funkciami aplikácie. Pokročilé vyhľadávanie je možné zobraziť a skryť pridaným tlačidlom. Priamo na úvodnej stránke sú umiestnené príklady skenovaných dokumentov, ktoré odkazom vedú na detail diela. Zobrazenie výsledkov vyhľadávania je riešené jednoduchým zoznamom. Tento prístup prináša vysokú mieru neprehľadnosti, pretože užívateľ nemôže porovnať hodnoty, či zoradiť výsledky na základe jednotlivých atribútov. Detail obsahuje
 stručné informácie o diele a náhľad strán, ktorý ale nie je dostupný bez inštalácie zásuvného modulu. 
-\section{Poučenie o tvorbe portálov kultúrneho dedičstva}
+\section{Smerovanie portálov kultúrneho dedičstva}
 Z analýzy existujúcich nástrojov na prehliadanie kultúrneho dedičstva bolo zistené že pri návrhu aplikácie by sme sa mali zamerať na nasledujúce oblasti:
 \begin{itemize}
 	\item vyhľadávanie
@@ -158,9 +180,14 @@ Z analýzy existujúcich nástrojov na prehliadanie kultúrneho dedičstva bolo 
 
 \chapter{Analýza}
 \section{Požiadavky zákazníka}
-Po komunikácii so zákazíkom na AWS boli zistené požiadavky zákazníka zobrazené diagramom na obrázku 546846
-
-Use case diagram jak hovado
+Po komunikácii so zákazníkom na analytických stretnutiach boli zistené požiadavky zobrazené diagramom na obrázku \textit{2.1}.\cite{uml1}\cite{uml2}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/diagram/useCase.png}
+	
+	\caption{Prípady použitia PD}
+	\label{useCaseDG}
+\end{figure}
 
 \subsection{Kategórie dokumentov}
 Dokumenty , ktoré sú predmetom prípravy a zverejnenia prostredníctvom portálu digitálneho kultúrneho dedičstva(ďalej už len PD) sú rozdelené do dvoch základných kategórií:
@@ -231,10 +258,134 @@ Nasledujúce funkcie budú dostupné všetkým registrovaným užívateľom:
 \end{itemize}
 \section{Návrh riešenia}
 Na základe analýzy existujúcich nástrojov na prehliadanie digitálnych fondov a komunikácie so zákazníkom bol vytvorený konečný návrh projektu. Pre implementáciu PD bude využité open source
-portálové riešenie \textit{Liferay} vo verzii \textit{6.2.2 community edition GA3}. Prípadný prechod na vyššiu verziu je možný prostredníctvom štandardných postupov pre portál Liferay a nieje zahrnutý v rozsahu tohto projektu. Zaznamenávanie operácií v PD bude zabezpečené pomocou frameworku pre Java aplikácie \textit{Log4j}. Výstupné hlášky sú štandardne zaznamenávané do súboru na aplikačnom serveri, na ktorom aplikácia beží. Jednotlivé hlášky budú rozdelené do úrovní. Nastavovanie týchto úrovní bude možné prostredníctvom administračného rozhrania portálu Liferay. Administrácia zverejňovania digitálneho obsahu bude dostupná všetkým oprávneným užívateľom. Vyhľadávanie bude dostupné všetkým užívateľom bez ohľadu na ich identitu.
+portálové riešenie \textit{Liferay} vo verzii \textit{6.2.2 community edition GA3}. Prípadný prechod na vyššiu verziu je možný prostredníctvom štandardných postupov pre portál Liferay a nieje zahrnutý v rozsahu tohto projektu. Zaznamenávanie operácií v PD bude zabezpečené pomocou frameworku pre Java aplikácie \textit{Log4j}. Výstupné hlášky sú štandardne zaznamenávané do súboru na aplikačnom serveri, na ktorom aplikácia beží. Jednotlivé hlášky budú rozdelené do úrovní. Nastavovanie týchto úrovní bude možné prostredníctvom administračného rozhrania portálu Liferay. Administrácia zverejňovania digitálneho obsahu bude dostupná všetkým oprávneným užívateľom. Vyhľadávanie bude dostupné všetkým užívateľom bez ohľadu na ich identitu.\cite{enterprise-systems}
 
 \subsection{Grafický vzhľad}
-Grafický vzhľad aplikácie bude meniteľný pomocou špeciálnych zásuvných modulov podporovaných portálom Liferay (tzv. témy). Zmena vzhľadu vyžaduje vývoj alebo úpravu zásuvného modulu.
+Grafický vzhľad aplikácie bude meniteľný pomocou špeciálnych zásuvných modulov podporovaných portálom Liferay (tzv. témy). Téma bude využitá naprieč všetkými časťami portálu. Tento prístup zabezpečuje jednotný dizajn aplikácie. Zmena vzhľadu vyžaduje vývoj alebo úpravu zásuvného modulu.
+\subsection{Komunikácia s externými systémami}
+Pre komunikáciu s externými systémami budú použité následujúce technológie:
+\begin{itemize} 
+\item \textit{Protokol Z39.50} – pre komunikáciu s pamäťovými inštitúciami kvôli aktualizácii metadát dokumentov
+\item \textit{Protokol OAI-PMH} – pre poskytnutie rozhrania, na zbieranie metadát v databáze externými aplikáciami
+\end{itemize}
+\subsection{Digitálny objekt}
+Digitálny objekt je štruktúra, ktorá vstupuje na vonkajšom rozhraní PD do importovacej dávky. Táto štruktúra bude v priebehu importovacieho procesu spracovaná a transformovaná do vnútornej štruktúry PD.
+Načítané digitálne objekty budú na základe svojich vlastností a zdrojových systémov delené do niekoľkých podskupín. Na delenie typov je možné nahliadať z dvoch rôznych perspektív.
+\begin{itemize}
+\item	Z pohľadu štruktúry dát 
+\item	Z pohľadu vlastného obsahu digitálneho objektu
+\end{itemize}
+Digitálne objekty importované zo systému SIRIUS sú fyzicky reprezentované pomocou SIP balíčkov. A práve tieto SIP balíčky odpovedajú v prípade systému SIRIUS jednotlivým typom objektov vnútornej štruktúry dát PD.
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/obr/struktObj.png}
+	
+	\caption{Príklad štrukturovaného dokumentu s tromi úrovňami}
+	\label{structDg3l}
+\end{figure}
+\subsection{Typy objektov z hľadiska štruktúry}
+Jeden SIP balíček bude transformovaný do práve jedného listového objektu (v prípade štrukturovaného objektu) alebo do jedného jednoduchého objektu. Napríklad v prípade monografie je to priamo vlastný digitálny objekt. V prípade periodika je SIP balíček listový objekt, ktorý sa stane súčasťou štrukturovaného objektu a bude zaradený ako digitálny objekt na jeho najnižšej úrovni).
+Z dát v listových objektoch bude možné zložiť celú štruktúru hierarchického digitálneho objektu pretože každý SIP balíček nesie informácie o celom štrukturovanom objekte a je možné príslušný objekt z týchto informácií vytvoriť. Dáta štrukturovaného objektu sú teda uložené redundantne v niekoľkých listových objektoch.
+Či sa jedná o jednoduchý objekt alebo sa jedná o štrukturovaný objekt a typ dokumentu z pohľadu obsahu bude určovať algoritmus rozoznania typu objektu. 
+\subsubsection{Jednoduchý objekt}
+Jednoduchý objekt znamená, že v portáli budú uložené dáta o danom digitálnom objekte bez možnosti jeho prechádzania po úrovniach. V tomto prípade môžeme jeden digitálny objekt označiť za ekvivalent jedného SIP balíčku.
+Z pohľadu obsahu sa jedná o nasledujúce typy:
+\begin{itemize}
+	\item Monografia
+	\item Zbierkový predmet
+	\item Rukopis
+	\item Veduta
+\end{itemize}
+\subsubsection{Hierarchický objekt}
+Hierarchický alebo štrukturovaný objekt je na najnižšej úrovni zložený z listových objektov a ďalších syntetických objektov. Jednotlivé úrovne ako aj vlastný koreňový objekt bude vždy možné identifikovať zo všetkých listových objektov. Z pohľadu obsahu se jedná o nasledujúce typy:
+\begin{itemize}
+\item Dvojúrovňové objekty
+	\begin{itemize}
+	\item Viaczväzková monografia
+	\item Kronika
+	\item Fotografia	
+	\item Mapa
+	\item Listina
+	\end{itemize}
+\item Trojúrovňové objekty
+	\begin{itemize}
+	\item Periodikum
+	\item Úradný zápis	
+	\end{itemize}
+\end{itemize}
+\subsubsection{Listový objekt}	
+Listový objekt je základným stavebným prvkom štrukturovaného objektu. Na rozdiel od jednoduchého objektu je vždy sprevádzaný svojim syntetickým nadobjektem. Tento syntetický nadobjekt je vždy čitateľný zo všetkých SIP balíčkov, ktoré sú uložené do objektu na najnižšej úrovni. Pokiaľ bude v štrukturovanom objekte iba jeden listový objekt, bude ho portál stále zobrazovať ako viacúrovňový objekt.
+\subsection{Typy objektov z hľadiska obsahu}
+Z hľadiska obsahu objektov rozoznávame niekoľko typov. U jednotlivých typov obsahu je vždy potrebné rozhodnúť aké atribúty budú načítané zo SIP balíčkov do vnútornej štruktúry PD. Všetky relevantné atribúty budú zanesené do vyhľadávacieho indexu.
+
+Pre jednoznačné odlíšenie digitálnych objektov budú využité atribúty generované systémom SIRIUS, ktoré budú zaisťovať ich jedinečnosť. Tieto atribúty môžu byť v závislosti od jednotlivých typov objektov rôzne. Podľa identifikátoru môžeme dokumenty rozdeliť do nasledujúcich skupín:
+\begin{itemize}
+	\item Parameter \textit{ČČNB} - monografie, viaczväzkové monografie, periodiká
+	\item Parameter \textit{DIGIKUJIF} - fotografie
+	\item Parameter \textit{DIGIKUJIM} - mapy
+	\item Parameter \textit{DIGIKUJIK} - kroniky
+	\item Parameter \textit{DIGIKUJIL} - listiny
+	\item Parameter \textit{DIGIKUJIR} - rukopisy
+	\item Parameter	\textit{DIGIKUJIV} - veduty
+	\item Parameter \textit{DIGIKUJIZ} - úradné zápisy
+\end{itemize}
+\subsection{Návrh dizajnu}
+Táto kapitola popisuje dizajn aplikácie a funkcie dostupné užívateľovi v jednotlivých sekciách.	Pre lepšiu predstavu ako bude popisovaná funkcionalita vyzerať vo výslednom systéme je pri prípadoch použitia uvedený nákres užívateľského rozhrania(tzv. mockup).
+\subsubsection{Úvodná stránka portálu}
+Úvodná stránka PD bude obsahovať čo najmenej informácií v záujme čo najväčšej prehľadnosti a jednoduchosti pre užívateľa. Konkrétne bude obsahovať:
+\begin{itemize}
+	\item vyhľadávací formulár
+	\item najčastejšie hľadané objekty
+	\item odkaz na kontaktné údaje
+	\item odkaz na informácie o jednotlivých pamäťových inštitúciách
+	\item odkaz na autorizované operácie pre prihláseného užívateľa
+	\item mapa umiestnenia dokumentov
+\end{itemize}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/mockup/welcome.png}	
+	\caption{Nákres úvodnej stránky}
+	\label{mockup-welcome}
+\end{figure}
+
+\subsubsection{Stručný detail objektu}
+Stručný detail objektu sa zobrazí pri kliknutí na konkrétny vyhľadaný objekt. Stručný detail nebude zobrazený cez celú plochu okna prehliadača, ale iba na polovici okna. Druhá polovica bude obsahovať mapu s bodmi predstavujúcimi miesta vydania, uloženia, či miesta, ku ktorým sa objekt obsahovo vzťahuje. 
+\clearpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{fithesis/mockup/detail-small.png}	
+	\caption{Nákres stručného detailu objektu}
+	\label{mockup-detail-small}
+\end{figure}
+\subsubsection{Plný detail objektu}
+Úplný detail objektu sa zobrazí po kliknutí na tlačidlo \textit{Zobraziť plný detail} v stručnom detaile objektu. Plný detail bude zobrazený cez celú plochu okna prehliadača a bude zobrazovať všetky informácie o danom objekte.
+Z plného detailu bude možné tento detail vytlačiť a exportovať do PDF. Rovnako bude možné vytlačiť a exportovať do PDF samotný objekt. Plný detail bude zobrazený na adrese, ktorá bude vo formáte permalinku. To znamená, že pri skopírovaní adresy z adresného riadku prehliadača do nového okna, bude zobrazený ten istý detail pôvodne zobrazeného objektu. Plný detail objektu bude tiež obsahovať napojenie na štandardné Facebook API, umožňujúce zdieľanie stránky.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{fithesis/mockup/detail-full.png}	
+	\caption{Nákres plného detailu objektu}
+	\label{mockup-detail-full}
+\end{figure}
+\subsubsection{Rozhranie pre import dát zo systému Sirius a Vismo}
+V príslušnej aplikácii v administračnom rozhraní užívateľ klikne na tlačidlo \textit{Spustit} pri položke \textit{SIRIUS} alebo \textit{VISMO}. Import je zahájený a do výpisu v spodnej časti obrazovky sa vypisujú informácie o prebiehajúcom importe.
+\clearpage
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/mockup/import.png}	
+	\caption{Nákres administračného rozhrania pre import dokumentov}
+	\label{mockup-import}
+\end{figure}
+
+\subsubsection{Správa pamäťových inštitúcií}
+Oprávnený užívateľ bude mať možnosť v administračnom rozhraní vytvárať, upravovať a mazať pamäťové inštitúcie so všetkými ich údajmi.
+\clearpage
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/mockup/institution.png}	
+	\caption{Nákres rozhrania pre správu inštitúcií}
+	\label{mockup-institution}
+\end{figure}
+\clearpage
 \chapter{Technológie}
 \section{Indexácia}
 \subsection{Výber vyhľadávacieho nástroja}
@@ -280,393 +431,137 @@ Tento dotaz vyhľadá všetky záznamy s uvedenými parametrami. \textit{Term} j
 	]
 }
 \end{lstlisting}
-Výsledkom dotazu je teda 1 záznam. 
+Výsledkom dotazu je teda 1 záznam.\cite{elastic-reference} 
 \subsection{Ďalšie možnosti vyhľadávania}							
-\paragraph{Radenie}
+\subsubsection{Radenie}
 Poradie vrátených záznamov môže byť vytvorené na základe určitého atribútu, relevancie výsledku alebo kombinácie týchto faktorov.
-\paragraph{Score}
+\subsubsection{Score}
 Ďalšou zaujímavou funkciou elasticu je \textit{relevance scoring}. Po tom čo získame zoznam vyhovujúcich záznamov, je potrebné ich zoradiť podľa relevancie. V prípade kombinovaného dotazu s logickými spojkami neobsahuje každý záznam všetky podmienky. Skóre relevancie sa počíta na základe troch faktorov:
 \begin{compactenum}
 	\item \textbf{Frekvencia výskytu hľadaného výrazu v zázname} - čím viac je v zázname zmienená, tým je záznam podstatnejší.
 	\item \textbf{Inverzná frekvencia hľadaného výrazu} – relevancia výrazu sa znižuje v závislosti od množstva záznamov obsahujúcich tento výraz.
 	\item \textbf{Rozsah atribútu , v ktorom bol výraz nájdený} – čím je obsah atribútu dlhší, tým je relevancia tohto výskytu nižšia
 \end{compactenum}
-\paragraph{Aggregations}			
+\subsubsection{Aggregations}			
 Výsledky vyhľadávania je niekedy potrebné zlučovať do skupín na základe určitého parametru. \textit{Elastic} ponúka funkciu \textit{Aggregations}. Pokiaľ je teda v dotaze špecifikovaný atribút, na základe ktorého sa majú záznamy zoskupovať je výsledkom objekt obsahujúci niekoľko skupín ďalších objektov, ktoré môžu predstavovať samotné záznamy alebo ďalšie skupiny zjednotení. Vďaka formátu JSON je možné tieto objekty serializovať. V prípade objektových jazykov ako Java je potom jednoduché poskladať štruktúry, s ktorými jazyk pracuje pomocou knižnice na deserializáciu.  
+\section{OAI-PMH}
+OAI-PMH\footnote{OAI-PMH - The Open Archives Initiative Protocol for Metadata Harvesting} je protokol ktorý sa používa na získavanie metadat elektronicky evidovaných dokumentov. Vznikol ako iniciatíva na zjednodušenie zbierania informácií vo viacerých separátnych repozitároch. Aj keď presný formát dát nie je určený, pre lepšiu interoperabilitu sa odporúča použitie štandardu Dublin Core.\cite{dublin-core} Pri použití protokolu sa na jednej strane komunikácie nachádza poskytovateľ, ktorý dáta vystavuje. Typicky ide o inštitúciu spravujúcu dané dokumenty. Záznamy sú do databázy poskytovateľa vkladané ručne alebo v prípade dokumentu vystaveného inou inštitúciou je možné proces automatizovať a použiť informácie získané z tohto zdroja. Záznamy môžu byť upravované a vykonané zmeny sa prejavia vo vystavených dátach. Na druhej strane je zberateľ, ktorý o dáta žiada. Pomocou protokolu môže zozbierať metadáta dokumentov z rôznych inštitúcií a vytvoriť rozhranie pre užívateľov, ktorí takto môžu vyhľadávať nad zjednotenými informáciami na jednom mieste.\cite{oai1}\cite{oai2}
+\section{Z39.50}
+Protokol Z39.50 je protokol na vyhľadávanie nad textovými databázami. Typicky sa využíva v knižničných systémoch. Na rozdiel od OAI-PMH nie je nutné dáta zozbierať a vytvoriť vyhľadávacie rozhranie ale je možné vyhľadávať priamo nad databázou konkrétnej inštitúcie. Je tiež možné vytvoriť rozhranie pre jednoduchšie používanie, zjednotenie informácií z viacerých zdrojov, alebo kombináciu s vyhľadávaním nad miestnou databázou. \cite{z39501}\cite{z39502}      
+\section{Portál}
+\subsection{Použitie portálu}
+Z užívateľského pohľadu je portál webová stránka, ktorá slúži ako jednotný bod prístupu k informáciám. Zámerom portálu je vytvoriť vstupnú bránu pre užívateľa po pripojení na internet. Môže zoskupovať informácie z rôznych zdrojov a zobrazovať ich užívateľovi na jednom mieste. Portál sa automaticky prispôsobuje potrebám konkrétneho užívateľa, ktorý ho používa. Užívateľ by tiež mal mať možnosť prispôsobiť zobrazený obsah podľa svojich potrieb.\cite{portal-common1}
+\subsection{Portálové technológie}
+K zobrazovaniu zjednotených informácií používa portál portlety. Portlet je webová aplikácia, ktorá je zodpovedná za jednu alebo viac funkcií.  Portlety bývajú štandardne súčasťou portálu po inštalácii, pretože niektoré požiadavky na funkcionalitu sa opakujú. Týmto spôsobom je možné zabezpečiť prihlasovanie užívateľov, systém oprávnení alebo zobrazovanie jednoduchého obsahu bez potreby ďalšej implementácie.\cite{portal-common2}
 
+Do portálu je tiež možné nasadiť vlastné portlety. Najnovšia špecifikácia popisujúca vývoj týchto portletov je JSR\footnote{JSR - Java Specification Request} 286, ktorá popisuje interakciu aplikácií s portálom. Vďaka tomu je možné vytvárať portlety, ktoré sú ľahko rozšíriteľné a prenositeľné bez ohľadu na typ použitej portálovej technológie.
+\section{Databázový systém}
+Z analýzy požiadavkov vyplýva, že aplikácia potrebuje pre svoj beh databázu, v ktorej budú uložené všetky dáta vytvorené samotnou aplikáciou. Ostatné informácie ako užívateľské údaje, rozloženie portletov na stránke alebo akékoľvek dáta generované existujúcimi aplikáciami portálu Liferay sú ukladané do oddelenej databázy. Obidve databázy sú v správe KDJ. Pre tento prípad sú vystavené dve inštancie databázovej technológie MSSQL.  
+\section{Liferay portal}
+V analytickej fáze projektu boli zvažované viaceré portálové technológie ako napr. GateIn, Jetspeed a WebSphere. Nakoniec bola zvolená technológia Liferay Portal. Táto technológia vyniká výbornou dokumentáciou, celosvetovým počtom užívateľov a dostupnosťou. Liferay Portal je open source riešenie, ktoré je možné zakúpiť v troch úrovniach podpory alebo ho využívať bezplatne vo verzii CE\footnote{CE - Community edition}. Od verzie 6 je liferay otvorený pod licenciou LGPL, ktorá garantuje prístup ku zdrojovým kódom počas implementácie. Táto vlastnosť v kombinácií s možnosťou nahradenia existujúcich modulov z neho robí vysoko prispôsobiteľnú vývojovú platformu\cite{yuan-interface},\cite{yuan-build}.
+\clearpage
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth]{fithesis/obr/liferayUvod.png}
+	
+	\caption{Práve nainštalovaný Liferay Portal}
+	\label{liferayUvod}
+\end{figure}
 
-\chapter{These are}
-\section{the available}
-\subsection{sectioning}
-\subsubsection{commands.}
-\paragraph{Paragraphs and}
-\subparagraph{subparagraphs are available as well.}
-Inside the text, you can also use unnumbered lists,
+\chapter{Implementácia}
+\section{Využité portlety Liferay Portal}
+Pred implementáciou samotnej aplikácie bolo potrebné určiť, akú časť funkcionality poskytovanej technológiou Liferay Portal je možné použiť v PD. Rozhodli sme sa pre nasledujúce moduly:
 \begin{itemize}
-  \item such as
-  \item this one
-  \begin{itemize}
-    \item     and they can be nested as well.
-    \item[>>] You can even turn the bullets into something fancier,
-    \item[\S] if you so desire.
-  \end{itemize}
+	\item \textit{Web Content Management Portlet} - obsahuje funkcie CMS\footnote{CMS - content management system}
+	\item \textit{Message Boards Portlet} - umožňuje pridávanie diskusie k objektu na základe primárneho kľúča
+	\item \textit{Asset Publisher Portlet} - umožňuje označovanie dokumentov pomocou tzv. štítkov, v PD je zodpovedný za žiadosti o rezervácie dokumentov
+	\item \textit{Asset Publisher Portlet} - stará sa o evidenciu kľúčových operácií v portáli, administrátor ju môže zobraziť priamo zo správcovského rozhrania 
 \end{itemize}
-Numbered lists are
-\begin{enumerate}
-  \item very
-  \begin{enumerate}
-    \item similar
-  \end{enumerate}
-\end{enumerate}
-and so are description lists:
-\begin{description}
-  \item[Description list]
-    A list of terms with a description of each term
-\end{description}
-The spacing of these lists is geared towards paragraphs of text.
-For lists of words and phrases, the \textsf{paralist} package
-offers commands
-\begin{compactitem}
-  \item that
-  \begin{compactitem}
-    \item are
-    \begin{compactitem}
-      \item better
-      \begin{compactitem}
-        \item suited
-      \end{compactitem}
-    \end{compactitem}
-  \end{compactitem}
-\end{compactitem}
+\section{Štruktúra aplikácie}
+Obslužné triedy aplikácie sa delia do troch balíkov. Každý z nich je z pohľadu programovacieho jazyka Java samostatná knižnica. Ich funkcie sú nasledovné:
+\begin{itemize}
+	\item \textit{core} - balík zodpovedný za funkcionalitu na pozadí aplikácie, obsahuje entity predstavujúce záznamy v databáze, stará sa o všetky operácie nad databázou aplikácie, implementuje rozhrania z balíku \textit{interface} ale nie je na ňom závislá
+	\item \textit{interface} - obsahuje objekty typu DTO\footnote{DTO - data transfer object}, predstavuje komunikáciou medzi frontend a backend, \textit{portlet} využíva operácie, kotré tento balík poskytuje, \textit{core} ich implementuje
+	\item \textit{portlet} - balík zodpovedný za frontend funkcionalitu, obsluhuje požiadavky užívateľa, stará sa o zobrazovanie obsahu\cite{java-ee}
+\end{itemize}
+\section{Digitálny objekt}
+Na začiatku implementácie bola vytvorená štruktúra digitálnych objektov podľa obrázku 3000. Na vrstve \textit{interface} je reprezentovaná týmito objektmi:
+\begin{itemize}
+	\item \textit{DigitalObjectDto} - abstraktná trieda, predstavuje spoločný základ pre všetky digitálne objekty, obsahuje základné atribúty ako napríklad \textit{id, miesto uloženia, názov}
+	\item \textit{SiriusObjectDto} - abstraktná trieda, predstavuje základ pre všetky objekty okrem zbierkových predmetov, rozširuje triedu \textit{DigitalObjectDto} o nasledujúce atribúty:
+	\begin{itemize}
+		\item \textit{sigla} - identifikátor inštitúcie, ktorá vlastní objekt
+		\item \textit{sipPackageName} - názov SIP balíčku, z ktorého bol záznam poskladaný
+		\item \textit{PhysicalDescriptionDto} - samostatný objekt, v ktorom je uložený popis dokumentu a informácie o jeho vytvorení
+	\end{itemize}
+	\item \textit{MonographSingleDto} - reprezentuje monografiu, pridáva atribút \textit{ccnb}(číslo České národní bibliografie)
+	\item \textit{MonographMultivolumeDto} - reprezentuje jeden výtlačok viaczväzkovej monografie, pridáva atribút \textit{partNumber}
+	\item \textit{PeriodicalIssueDto} - reprezentuje jeden výtlačok periodika, pridáva atribút \textit{issueNumber} a \textit{subTitle}
+	\item \textit{MapDto} - reprezentuje mapu, pridáva atribút \textit{scale}(mierka mapy)
+	\item \textit{PhotographDto} - reprezentuje fotografiu, pridáva atribút \textit{imageNumber}
+	\item \textit{OfficialRecordIssueDto} - reprezentuje úradný dokument
+	\item \textit{VedutteDto}	
+\end{itemize}
+Pre prácu s digitálnymi objektmi a pomocnými triedami boli v balíku \textit{interface} vytvorené nasledujúce objekty:
+\begin{itemize}
+	\item \textit{DigitalObjectService} - vykonáva CRUD\footnote{CRUD - create, read, update, delete} operácie nad digitálnymi objektmi
+	\item \textit{DigitalObjectConverter} - konvertuje entity na DTO a naopak
+	\item \textit{PhysicalDescriptionService} - CRUD a konverzia popisov objektov
+	\item \textit{LanguageService} - CRUD a konverzia nad \textit{LanguageDto}
+	\item \textit{LocationService} - CRUD a konverzia nad \textit{LocationDto}
+\end{itemize}
+Tieto rozhrania sú implementované v balíku \textit{core}. Názvy tried sú tvorené z názvov rozhraní pridaním prípony \textit{Impl}.
+\section{Controller}
+\textit{Controller} je komponenta systému, ktorá obsluhuje prichádzajúce požiadavky užívateľa. Je súčasťou návrhového vzoru MVC\footnote{MVC - model-view-controller}. Z hľadiska funkcionality aplikácie PD predstavuje jeden logický celok. Nasledujúce triedy reprezentujú príslušné controllery:
+\begin{itemize}
+	\item \textit{DigitalObjectDetailViewController} - obsluhuje funkcie plného detailu digitálneho objektu
+	\item \textit{DocumentReaderViewController} - obsluhuje funkcie vyhľadávania a mapy
+	\item \textit{ImportAdminViewController} - obsluhuje funkcie rozhrania pre import
+	\item \textit{InstitutionViewController} - obsluhuje funkcie rozhrania pre správu a výpis pamäťových inštitúcií	
+\end{itemize}
+\section{Príklad fungovania aplikácie}
+Logiku aplikácie si môžeme najlepšie ukázať na jednoduchom príklade. Zvolíme si akcie a vstupné informácie.  Užívateľ sa nachádza v administrácii a má otvorený formulár na úpravu dokumentu v ktorom zmenil názov diela. Po kliknutí na tlačidlo \textit{Uložiť} vykoná aplikácia nasledujúce kroky:
 \begin{compactenum}
-  \item to
-  \begin{compactenum}
-    \item this
-    \begin{compactenum}
-      \item kind of
-      \begin{compactenum}
-        \item content.
-      \end{compactenum}
-    \end{compactenum}
-  \end{compactenum}
+	\item Na základe parametra \textit{ACTION\_DIGITAL\_OBJECT\_NAME} rozozná o aký typ akcie sa jedná a priradí hodnotu atribútu \textit{ADMINISTRATED\_DTO} v tele requestu do parametra \textit{digitalObjectDto} v metóde \textit{updateMonographSingleDocument()}.
+	\item Skontroluje formulár. V prípade chyby zapíše výnimku do logu aplikácie a upovedomí užívateľa.
+	\item V prípade akceptovateľného formulára zavolá metódu \textit{updateDigitalObject(digitalObjectDto)} v triede \textit{DigitalObjectManager}, ktorá vykoná nasledujúce kroky:
+	\begin{compactenum}
+		\item Pomocou konvertora digitálnych objektov získa z objektu typu \textit{Dto} entitu digitálneho objektu.
+		\item Uloží zmenenú entitu do databázy na základe parametra \textit{id}.
+		\item Upraví záznam vo vyhľadávacom indexe tak aby odpovedal databázovému záznamu.		
+	\end{compactenum} 
+	\item Nastaví hodnotu parametra \textit{PARAM\_PAGE} na \textit{PAGE\_EDIT\_DIGITAL\_OBJECT} a hodnotu parametra \textit{PARAM\_ID} na id upravovaného dokumentu, čím zabezpečí návrat na stránku úpravy dokumentu.	 
 \end{compactenum}
-The \textsf{amsthm} package provides the commands necessary for the
-typesetting of mathematical definitions, theorems, lemmas and
-proofs.
+\section{Ukážka kódu}
+\begin{lstlisting}[language=Java, basicstyle=\small, style=java-nice]
+@ActionMapping(ACTION_DIGITAL_OBJECT_SAVE)
+public void updateMonographSingleDocument(Model model, 
+   ActionRequest request, ActionResponse response,
+@Valid @ModelAttribute(ADMINISTRATED_DTO) DigitalObjectDto 
+   digitalObjectDto, BindingResult result) {
 
-%% We will define several mathematical sectioning commands.
-\newtheorem{theorem}{Theorem}[section] %% The numbering of theorems
-                               %% will be reset after each section.
-\newtheorem{lemma}[theorem]{Lemma}     %% The numbering of lemmas
-\newtheorem{corr}[theorem]{Corrolary}  %% and corrolaries will
-                                %% share the counter with theorems.
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
+   if (!result.hasErrors()) {
+      sendMetadataEditedEmails(digitalObjectDto.getId());
+      digitalObjectManager.updateDigitalObject(digitalObjectDto);
+      SessionMessages.add(request, "digital-object-form-saved");
+      LogMF.info(LOG, "Digital object ID: {0} updated successfully", 
+         new Object[]{digitalObjectDto.getId()});
+   } else {
+      LogMF.error(LOG, "Error updating Monograph Single Document: {0}",
+         new Object[]{result.getAllErrors()});
+      SessionErrors.add(request, "monograph-form-contain-error");
+   }
+    
+      response.setRenderParameter(PARAM_ID, 
+         digitalObjectDto.getId());
+      response.setRenderParameter(PARAM_PAGE, 
+         PAGE_EDIT_DIGITAL_OBJECT);
+ }
+\end{lstlisting}
 
-\begin{theorem}
-  This is a theorem that offers a profound insight into the
-  mathematical sectioning commands.
-\end{theorem}
-\begin{theorem}[Another theorem]
-  This is another theorem. Unlike the first one, this theorem has
-  been endowed with a name.
-\end{theorem}
-\begin{lemma}
-  Let us suppose that $x^2+y^2=z^2$. Then
-  \begin{equation}
-    \biggl\langle u\biggm|\sum_{i=1}^nF(e_i,v)e_i\biggr\rangle
-    =F\biggl(\sum_{i=1}^n\langle e_i|u\rangle e_i,v\biggr).
-  \end{equation}
-\end{lemma}
-\begin{proof}
-  $\nabla^2 f(x,y)=\frac{\partial^2f}{\partial x^2}+
-   \frac{\partial^2f}{\partial y^2}$.
-\end{proof}
-\begin{corr}
-  This is a corrolary.
-\end{corr}
-\begin{remark}
-  This is a remark.
-\end{remark}
 
-\chapter{Floats and references}
-\begin{figure}
-  \begin{center}
-    %% PNG and JPG images can be inserted into the document as well,
-    %% but their resolution needs to be adequate. The minimum is
-    %% about 250 pixels per 1 centimeter. That means that a JPG or
-    %% PNG image typeset at 40 × 40 mm should be 1000 × 1000 px
-    %% large at minimum.
-    \includegraphics[width=40mm]{fithesis/logo/mu/fithesis-base.pdf}
-  \end{center}
-  \caption{The logo of the Masaryk University at 40\,mm}
-  \label{fig:mulogo1}
-\end{figure}
-
-\begin{figure}
-  \begin{minipage}{.66\textwidth}
-    \includegraphics[width=\textwidth]{fithesis/logo/mu/fithesis-base.pdf}
-  \end{minipage}
-  \begin{minipage}{.33\textwidth}
-    \includegraphics[width=\textwidth]{fithesis/logo/mu/fithesis-base.pdf} \\
-    \includegraphics[width=\textwidth]{fithesis/logo/mu/fithesis-base.pdf}
-  \end{minipage}
-  \caption{The logo of the Masaryk University at $\frac23$ and
-    $\frac13$ of text width}
-  \label{fig:mulogo2}
-\end{figure}
-
-\begin{table}
-  \begin{tabularx}{\textwidth}{lllX}
-    \toprule
-    Day & Min Temp & Max Temp & Summary \\
-    \midrule
-    Monday & $13^{\circ}\mathrm{C}$ & $21^\circ\mathrm{C}$ & A
-    clear day with low wind and no adverse current advisories. \\
-    Tuesday & $11^{\circ}\mathrm{C}$ & $17^\circ\mathrm{C}$ & A
-    trough of low pressure will come from the northwest. \\
-    Wednesday & $10^{\circ}\mathrm{C}$ &
-    $21^\circ\mathrm{C}$ & Rain will spread to all parts during the
-    morning. \\
-    \bottomrule
-  \end{tabularx}
-  \caption{A weather forecast}
-  \label{tab:weather}
-\end{table}
-
-The logo of the Masaryk University is shown in Figure
-\ref{fig:mulogo1} and Figure \ref{fig:mulogo2} at pages
-\pageref{fig:mulogo1} and \pageref{fig:mulogo2}. The weather
-forecast is shown in Table \ref{tab:weather} at page
-\pageref{tab:weather}. The following chapter is Chapter
-\ref{chap:matheq} and starts at page \pageref{chap:matheq}.
-Items \ref{item:star1}, \ref{item:star2}, and
-\ref{item:star3} are starred in the following list:
-\begin{compactenum}
-  \item some text
-  \item some other text
-  \item $\star$ \label{item:star1}
-  \begin{compactenum}
-    \item some text
-    \item $\star$ \label{item:star2}
-    \item some other text
-    \begin{compactenum}
-      \item some text
-      \item some other text
-      \item yet another piece of text
-      \item $\star$ \label{item:star3}
-    \end{compactenum}
-    \item yet another piece of text
-  \end{compactenum}
-  \item yet another piece of text
-\end{compactenum}
-If your reference points to a place that has not yet been typeset,
-the \verb"\ref" command will expand to \textbf{??} during the first
-run of
-\texttt{pdflatex \jobname.tex}
-and a second run is going to be needed for the references to
-resolve. With online services -- such as Overleaf -- this is
-performed automatically.
-
-\chapter{Mathematical equations}
-\label{chap:matheq}
-\TeX{} comes pre-packed with the ability to typeset inline
-equations, such as $\mathrm{e}^{ix}=\cos x+i\sin x$, and display
-equations, such as \[
-  \mathbf{A}^{-1} = \begin{bmatrix}
-  a & b \\ c & d \\
-  \end{bmatrix}^{-1} =
-  \frac{1}{\det(\mathbf{A})} \begin{bmatrix}
-  \,\,\,d & \!\!-b \\ -c & \,a \\
-  \end{bmatrix} =
-  \frac{1}{ad - bc} \begin{bmatrix}
-  \,\,\,d & \!\!-b \\ -c & \,a \\
-  \end{bmatrix}.
-\] \LaTeX{} defines the automatically numbered \texttt{equation}
-environment:
-\begin{equation}
-  \gamma Px = PAx = PAP^{-1}Px.
-\end{equation}
-The package \textsf{amsmath} provides several additional
-environments that can be used to typeset complex equations:
-\begin{enumerate}
-  \item An equation can be spread over multiple lines using the
-    \texttt{multline} environment:
-    \begin{multline}
-      a + b + c + d + e + f + b + c + d + e + f + b + c + d + e +
-f \\
-      + f + g + h + i + j + k + l + m + n + o + p + q
-    \end{multline}
-
-  \item Several aligned equations can be typeset using the
-    \texttt{align} environment:
-    \begin{align}
-              a + b &= c + d     \\
-                  u &= v + w + x \\[1ex]
-      i + j + k + l &= m
-    \end{align}
-
-  \item The \texttt{alignat} environment is similar to
-    \texttt{align}, but it doesn't insert horizontal spaces between
-    the individual columns:
-    \begin{alignat}{2}
-      a + b + c &+ d       &   &= 0 \\
-              e &+ f + g   &   &= 5
-    \end{alignat}
-
-  \item Much like chapter, sections, tables, figures, or list
-    items, equations -- such as \eqref{eq:first} and
-    \eqref{eq:mine} -- can also be labeled and referenced:
-    \begin{alignat}{4}
-      b_{11}x_1 &+ b_{12}x_2  &  &+ b_{13}x_3  &  &             &
-        &= y_1,                   \label{eq:first} \\
-      b_{21}x_1 &+ b_{22}x_2  &  &             &  &+ b_{24}x_4  &
-        &= y_2. \tag{My equation} \label{eq:mine}
-    \end{alignat}
-
-  \item The \texttt{gather} environment makes it possible to
-    typeset several equations without any alignment:
-    \begin{gather}
-      \psi = \psi\psi, \\
-      \eta = \eta\eta\eta\eta\eta\eta, \\
-      \theta = \theta.
-    \end{gather}
-
-  \item Several cases can be typeset using the \texttt{cases}
-    environment:
-    \begin{equation}
-      |y| = \begin{cases}
-        \phantom-y & \text{if }z\geq0, \\
-                -y & \text{otherwise}.
-      \end{cases}
-    \end{equation}
-\end{enumerate}
-For the complete list of environments and commands, consult the
-\textsf{amsmath} package manual\footnote{
-  See \url{http://mirrors.ctan.org/macros/latex/required/amslatex/math/amsldoc.pdf}.
-  The \texttt{\textbackslash url} command is provided by the
-  package \textsf{url}.
-}.
-
-\chapter{\textnormal{We \textsf{have} \texttt{several} \textsc{fonts}
-  \textit{at} \textbf{disposal}}}
-The serified roman font is used for the main body of the text.
-\textit{Italics are typically used to denote emphasis or
-quotations.} \texttt{The teletype font is typically used for source
-code listings.} The \textbf{bold}, \textsc{small-caps} and
-\textsf{sans-serif} variants of the base roman font can be used to
-denote specific types of information.
-
-\tiny We \scriptsize can \footnotesize also \small change \normalsize
-the \large font \Large size, \LARGE although \huge it \Huge
-is \huge usually \LARGE not \Large necessary.\normalsize
-
-A wide variety of mathematical fonts is also available, such as: \[
-  \mathrm{ABC}, \mathcal{ABC}, \mathbf{ABC}, \mathsf{ABC},
-  \mathit{ABC}, \mathtt{ABC}
-\] By loading the \textsf{amsfonts} packages, several additional
-fonts will become available: \[
-  \mathfrak{ABC}, \mathbb{ABC}
-\] Many other mathematical fonts are available\footnote{
-  See \url{http://tex.stackexchange.com/a/58124/70941}.
-}.
-
-\chapter{Inserting the bibliography}
-After loading the \texttt{biblatex} package and linking a
-bibliography data\-base file to the document using the
-\verb"\addbibresource" command, you can start citing the entries.
-This is just dummy text \cite{inbook-full} lightly sprinkled with
-citations \cite[p.~123]{incollection-full}.  Several sources can be
-cited at once \cite{whole-collection, manual-minimal,manual-full}.
-\citetitle{inbook-full} was written by \citeauthor{inbook-full} in
-\citeyear{inbook-full}. We can also produce \textcite{inbook-full}
-or%% Let us define a compound command:
-\def\citeauthoryear#1{(\textcite{#1},~\citeyear{#1})}
-\citeauthoryear{inbook-full}. The full bibliographic citation is:
-\emph{\fullcite{inbook-full}}. We can easily insert a bibliographic
-citation into the footnote\footfullcite{inbook-full}.
-
-The \verb"\nocite" command will not generate any
-output\nocite{booklet-full}, but it will insert its argument into
-the bibliography. The \verb"\nocite{*}" command will insert all the
-records in the bibliography database file into the bibliography.
-Try uncommenting the command
-%% \nocite{*}
-and watch the bibliography section come apart at the seams.
-
-When typesetting the document for the first time, citing a
-\texttt{work} will expand to [\textbf{work}] and the
-\verb"\printbibliography" command will produce no output. It is now
-necessary to generate the bibliography by running \texttt{biber
-\jobname.bcf} from the command line and then by typesetting the
-document again twice. During the first run, the bibliography
-section and the citations will be typeset, and in the second run,
-the bibliography section will appear in the table of contents.
-
-The \texttt{biber} command needs to be executed from within the
-directory, where the \LaTeX\ source file is located. In Windows,
-the command line can be opened in a directory by holding down the
-\keys{Shift} key and by clicking the right mouse button while
-hovering the cursor over a directory.  Select the \menu{Open
-Command Window Here} option in the context menu that opens shortly
-afterwards.
-
-With online services -- such as Overleaf -- all commands are
-executed automatically.
-
-{\csname captions\languagename\endcsname %% Temporarily override
-%% the BibLaTeX localization with the original babel definitions.
-\makeatletter %% Use the correct localization of the quotations.
-  \thesis@selectLocale{\thesis@locale}\makeatother
-\printbibliography[heading=bibintoc]} %% Print the bibliography.
-
-\chapter{Inserting the index}
-After using the \verb"\makeindex" macro and loading the
-\texttt{makeidx} package that provides additional indexing
-commands, index entries can be created by issuing the \verb"\index"
-command. \index{dummy text|(}It is possible to create ranged index
-entries, which will encompass a span of text.\index{dummy text|)}
-To insert complex typographic material -- such as $\alpha$
-\index{alpha@$\alpha$} or \TeX{} \index{TeX@\TeX} --
-into the index, you need to specify a text string, which will
-determine how the entry will be sorted. It is also possible to
-create hierarchal entries. \index{vehicles!trucks}
-\index{vehicles!speed cars}
-
-After typesetting the document, it is necessary to generate the
-index by running
-\begin{center}%
-  \texttt{texindy -I latex -C utf8 -L }$\langle$\textit{locale}%
-  $\rangle$\texttt{ \jobname.idx}
-\end{center}
-from the command line, where $\langle$\textit{locale}$\rangle$
-corresponds to the main locale of your thesis -- such as
-\texttt{english}, and then typesetting the document again.
-
-The \texttt{texindy} command needs to be executed from within the
-directory, where the \LaTeX\ source file is located. In Windows,
-the command line can be opened in a directory by holding down the
-\keys{Shift} key and by clicking the right mouse button while
-hovering the cursor over a directory. Select the \menu{Open Command
-Window Here} option in the context menu that opens shortly
-afterwards.
-
-With online services -- such as Overleaf -- the commands are
-executed automatically, although the locale may be erroneously
-detected, or the \texttt{makeindex} tool (which is only able to
-sort entries that contain digits and letters of the English
-alphabet) may be used instead of \texttt{texindy}. In either case,
-the index will be ill-sorted.
-
-\makeatletter\thesis@blocks@clear\makeatother
-\phantomsection %% Print the index and insert it into the
-\addcontentsline{toc}{chapter}{\indexname} %% table of contents.
-\printindex
-
-\appendix %% Start the appendices.
-\chapter{An appendix}
-Here you can insert the appendices of your thesis.
-
+\chapter{Záver}
+Záver.
+\chapter*{Literatúra}
+\printbibliography[heading=none] %% Print the bibliography.
 \end{document}

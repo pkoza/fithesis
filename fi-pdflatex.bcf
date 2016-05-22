@@ -2026,20 +2026,20 @@
     <bcf:datasource type="file" datatype="bibtex">example.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">inbook-full</bcf:citekey>
-    <bcf:citekey order="2">incollection-full</bcf:citekey>
-    <bcf:citekey order="3">whole-collection</bcf:citekey>
-    <bcf:citekey order="3">manual-minimal</bcf:citekey>
-    <bcf:citekey order="3">manual-full</bcf:citekey>
-    <bcf:citekey order="4">inbook-full</bcf:citekey>
-    <bcf:citekey order="5">inbook-full</bcf:citekey>
-    <bcf:citekey order="6">inbook-full</bcf:citekey>
-    <bcf:citekey order="7">inbook-full</bcf:citekey>
-    <bcf:citekey order="9">inbook-full</bcf:citekey>
-    <bcf:citekey order="11">inbook-full</bcf:citekey>
-    <bcf:citekey order="12">inbook-full</bcf:citekey>
-    <bcf:citekey order="13">inbook-full</bcf:citekey>
-    <bcf:citekey order="14">booklet-full</bcf:citekey>
+    <bcf:citekey order="1">uml1</bcf:citekey>
+    <bcf:citekey order="2">uml2</bcf:citekey>
+    <bcf:citekey order="3">enterprise-systems</bcf:citekey>
+    <bcf:citekey order="4">elastic-reference</bcf:citekey>
+    <bcf:citekey order="5">dublin-core</bcf:citekey>
+    <bcf:citekey order="6">oai1</bcf:citekey>
+    <bcf:citekey order="7">oai2</bcf:citekey>
+    <bcf:citekey order="8">z39501</bcf:citekey>
+    <bcf:citekey order="9">z39502</bcf:citekey>
+    <bcf:citekey order="10">portal-common1</bcf:citekey>
+    <bcf:citekey order="11">portal-common2</bcf:citekey>
+    <bcf:citekey order="12">yuan-interface</bcf:citekey>
+    <bcf:citekey order="13">yuan-build</bcf:citekey>
+    <bcf:citekey order="14">java-ee</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none/global" type="entry" sortscheme="none" sortnamekeyscheme="global">
   <bcf:sorting>
