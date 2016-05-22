@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.14)  22 MAY 2016 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.14)  22 MAY 2016 22:29
 entering extended mode
 **fi-pdflatex.tex
 (fi-pdflatex.tex
@@ -2049,8 +2049,8 @@ File: fithesis/style/mu/fithesis-12.clo 2016/01/07
 )) (fithesis/style/mu/fithesis-fi.sty
 Package: fithesis/style/mu/fithesis-fi 2016/01/07
 )
-Package hyperref Info: Option `unicode' set `true' on input line 148.
-Package hyperref Info: Option `unicode' set `true' on input line 148.
+Package hyperref Info: Option `unicode' set `true' on input line 150.
+Package hyperref Info: Option `unicode' set `true' on input line 150.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
 Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
@@ -2065,14 +2065,14 @@ Package csquotes Info: Adjusting default style.
 
 
 Package csquotes Warning: No style for language 'slovak'.
-(csquotes)                Using fallback style on input line 148.
+(csquotes)                Using fallback style on input line 150.
 
 Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 Package biblatex Info: Trying to load language 'slovak'...
 Package biblatex Info: ... file 'slovak.lbx' not found.
 
 Package biblatex Warning: Language 'slovak' not supported.
-(biblatex)                Using fallback language 'english' on input line 148.
+(biblatex)                Using fallback language 'english' on input line 150.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -2098,31 +2098,31 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 )
 (fi-pdflatex.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 150.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
 \c@lstlisting=\count376
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -2149,8 +2149,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fi-pdflatex.bbl' found.
  (fi-pdflatex.bbl)
-Package biblatex Info: Reference section=0 on input line 148.
-Package biblatex Info: Reference segment=0 on input line 148.
+Package biblatex Info: Reference section=0 on input line 150.
+Package biblatex Info: Reference segment=0 on input line 150.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box68
 
@@ -2162,7 +2162,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-LaTeX Info: Redefining \microtypecontext on input line 148.
+LaTeX Info: Redefining \microtypecontext on input line 150.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2177,7 +2177,7 @@ Package microtype Info: Redefining babel's language switching commands.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-ppl.cfg"
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-Package hyperref Info: Link coloring OFF on input line 148.
+Package hyperref Info: Link coloring OFF on input line 150.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2187,9 +2187,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count383
 )
-LaTeX Info: Redefining \ref on input line 148.
-LaTeX Info: Redefining \pageref on input line 148.
-LaTeX Info: Redefining \nameref on input line 148.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
 
 (fi-pdflatex.out) (fi-pdflatex.out)
 \@outlinefile=\write7
@@ -2207,8 +2207,8 @@ Package microtype Info: Character `029' is missing
 File: fithesis/logo/mu/fithesis-fi.pdf Graphic file (type pdf)
 
 <use fithesis/logo/mu/fithesis-fi.pdf>
-Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 14
-8.
+Package pdftex.def Info: fithesis/logo/mu/fithesis-fi.pdf used on input line 15
+0.
 (pdftex.def)             Requested size: 113.81102pt x 114.20036pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/14.4'.
@@ -2222,7 +2222,7 @@ is-fi.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{pa
 ge.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{document}
+l.150 \begin{document}
                        [2
 
 
@@ -2230,7 +2230,7 @@ l.148 \begin{document}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{document}
+l.150 \begin{document}
                        [-1
 
 
@@ -2238,7 +2238,7 @@ l.148 \begin{document}
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \begin{document}
+l.150 \begin{document}
                        [0
 
 
@@ -2262,48 +2262,48 @@ l.148 \begin{document}
 ] (fi-pdflatex.toc
 
 LaTeX Font Warning: Font shape `T1/qpl/m/sl' in size <12> not available
-(Font)              Font shape `T1/qpl/m/it' tried instead on input line 7.
+(Font)              Font shape `T1/qpl/m/it' tried instead on input line 9.
 
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 7.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 7.
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )<<omx.cmap>>
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 7.
+(Font)              scaled to size 12.50409pt on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 7.
+(Font)              scaled to size 9.37807pt on input line 9.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 7.
+(Font)              scaled to size 7.29405pt on input line 9.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 7.
+(Font)              scaled to size 12.50409pt on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 7.
+(Font)              scaled to size 9.37807pt on input line 9.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 7.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 7.
+(Font)              scaled to size 7.29405pt on input line 9.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -2329,7 +2329,15 @@ Package microtype Info: Loading generic settings for font family
 
 ]
 Kapitola 1.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 152.
+[1
+
+
+] [2
+
+
+]
+Kapitola 2.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 158.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2339,181 +2347,170 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 152.
+(Font)              scaled to size 10.42007pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 152.
+(Font)              scaled to size 7.91925pt on input line 158.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 152.
+(Font)              scaled to size 6.25204pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 152.
+(Font)              scaled to size 10.42007pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 152.
+(Font)              scaled to size 7.91925pt on input line 158.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 152.
+(Font)              scaled to size 6.25204pt on input line 158.
 
 Overfull \vbox (8.84886pt too high) has occurred while \output is active []
 
 
-[1
-
-
-]
-LaTeX Font Info:    Try loading font information for TS1+qpl on input line 159.
+[3]
+LaTeX Font Info:    Try loading font information for TS1+qpl on input line 165.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qpl.fd"
 File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
-) [2]
-Kapitola 2.
-<fithesis/diagram/useCase.png, id=394, 693.0693pt x 466.8642pt>
+) [4]
+Kapitola 3.
+<fithesis/diagram/useCase.png, id=404, 693.0693pt x 466.8642pt>
 File: fithesis/diagram/useCase.png Graphic file (type png)
 
 <use fithesis/diagram/useCase.png>
-Package pdftex.def Info: fithesis/diagram/useCase.png used on input line 186.
+Package pdftex.def Info: fithesis/diagram/useCase.png used on input line 192.
 (pdftex.def)             Requested size: 361.34999pt x 243.41191pt.
- [3
+ [5
 
 
  <./fithesis/diagram/useCase.png>]
-[4] [5] [6] [7] <fithesis/obr/struktObj.png, id=427, 451.6875pt x 261.97874pt>
+[6] [7] [8] [9] <fithesis/obr/struktObj.png, id=437, 451.6875pt x 261.97874pt>
 File: fithesis/obr/struktObj.png Graphic file (type png)
 
 <use fithesis/obr/struktObj.png>
-Package pdftex.def Info: fithesis/obr/struktObj.png used on input line 281.
+Package pdftex.def Info: fithesis/obr/struktObj.png used on input line 287.
 (pdftex.def)             Requested size: 361.34999pt x 209.59526pt.
- [8] [9 <./fithesis/obr/struktObj.png>]
-[10] [11] <fithesis/mockup/welcome.png, id=445, 402.75468pt x 262.73157pt>
+ [10] [11 <./fithesis/obr/struktObj.png>]
+[12] [13] <fithesis/mockup/welcome.png, id=455, 402.75468pt x 262.73157pt>
 File: fithesis/mockup/welcome.png Graphic file (type png)
 
 <use fithesis/mockup/welcome.png>
-Package pdftex.def Info: fithesis/mockup/welcome.png used on input line 346.
+Package pdftex.def Info: fithesis/mockup/welcome.png used on input line 352.
 (pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
- [12 <./fithesis/mockup/welcome.png>]
-<fithesis/mockup/detail-small.png, id=450, 402.75468pt x 262.73157pt>
+ [14 <./fithesis/mockup/welcome.png>]
+<fithesis/mockup/detail-small.png, id=460, 402.75468pt x 262.73157pt>
 File: fithesis/mockup/detail-small.png Graphic file (type png)
 
 <use fithesis/mockup/detail-small.png>
-Package pdftex.def Info: fithesis/mockup/detail-small.png used on input line 35
-6.
-(pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
-
-<fithesis/mockup/detail-full.png, id=451, 402.75468pt x 262.73157pt>
-File: fithesis/mockup/detail-full.png Graphic file (type png)
-
-<use fithesis/mockup/detail-full.png>
-Package pdftex.def Info: fithesis/mockup/detail-full.png used on input line 365
-.
-(pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13
-
- <./fithesis/mockup/detail-small.png>] [14 <./fithesis/mockup/detail-full.png>]
-
-<fithesis/mockup/import.png, id=460, 402.75468pt x 262.73157pt>
-File: fithesis/mockup/import.png Graphic file (type png)
-
-<use fithesis/mockup/import.png>
-Package pdftex.def Info: fithesis/mockup/import.png used on input line 374.
+Package pdftex.def Info: fithesis/mockup/detail-small.png used on input line 36
+3.
 (pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
  [15
 
- <./fithesis/mockup/import.png>]
-<fithesis/mockup/institution.png, id=465, 402.75468pt x 262.73157pt>
-File: fithesis/mockup/institution.png Graphic file (type png)
+ <./fithesis/mockup/detail-small.png>] <fithesis/mockup/detail-full.png, id=465
+, 402.75468pt x 262.73157pt>
+File: fithesis/mockup/detail-full.png Graphic file (type png)
 
-<use fithesis/mockup/institution.png>
-Package pdftex.def Info: fithesis/mockup/institution.png used on input line 384
+<use fithesis/mockup/detail-full.png>
+Package pdftex.def Info: fithesis/mockup/detail-full.png used on input line 373
 .
 (pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
  [16
 
+ <./fithesis/mockup/detail-full.png>]
+<fithesis/mockup/import.png, id=470, 402.75468pt x 262.73157pt>
+File: fithesis/mockup/import.png Graphic file (type png)
+
+<use fithesis/mockup/import.png>
+Package pdftex.def Info: fithesis/mockup/import.png used on input line 382.
+(pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
+ [17
+
+ <./fithesis/mockup/import.png>]
+<fithesis/mockup/institution.png, id=476, 402.75468pt x 262.73157pt>
+File: fithesis/mockup/institution.png Graphic file (type png)
+
+<use fithesis/mockup/institution.png>
+Package pdftex.def Info: fithesis/mockup/institution.png used on input line 391
+.
+(pdftex.def)             Requested size: 361.34999pt x 235.72256pt.
+ [18
+
  <./fithesis/mockup/institution.png>]
-Kapitola 3.
-[17
+Kapitola 4.
+[19
 
 
 
-] [18]
+] [20]
 Underfull \vbox (badness 4024) has occurred while \output is active []
 
- [19]
-[20] [21] <fithesis/obr/liferayUvod.png, id=548, 749.80125pt x 523.9575pt>
+ [21]
+[22] [23] <fithesis/obr/liferayUvod.png, id=559, 749.80125pt x 523.9575pt>
 File: fithesis/obr/liferayUvod.png Graphic file (type png)
 
 <use fithesis/obr/liferayUvod.png>
-Package pdftex.def Info: fithesis/obr/liferayUvod.png used on input line 465.
+Package pdftex.def Info: fithesis/obr/liferayUvod.png used on input line 472.
 (pdftex.def)             Requested size: 361.34999pt x 252.5121pt.
- [22
+ [24
 
  <./fithesis/obr/liferayUvod.png>]
-Kapitola 4.
-[23
+Kapitola 5.
+[25
 
 
 ]
-Overfull \hbox (9.55702pt too wide) in paragraph at lines 491--493
+Overfull \hbox (9.55702pt too wide) in paragraph at lines 497--499
 []\T1/qpl/m/it/12 SiriusObjectDto \T1/qpl/m/n/12 (-20) - ab-s-traktná trieda, p
 red-sta-vuje zá-klad pre v²etky
  []
 
-
-Overfull \hbox (6.10439pt too wide) in paragraph at lines 500--501
-[]\T1/qpl/m/it/12 MapDto \T1/qpl/m/n/12 (-20) - re-pre-zen-tuje mapu, pri-dáva 
-at-ri-bút \T1/qpl/m/it/12 scale\T1/qpl/m/n/12 (-20) (mierka mapy) 
- []
-
-[24]
-Overfull \hbox (14.14426pt too wide) in paragraph at lines 520--521
+[26]
+Overfull \hbox (14.14426pt too wide) in paragraph at lines 526--527
 []\T1/qpl/m/it/12 InstitutionViewController \T1/qpl/m/n/12 (-20) - ob-slu-huje 
 fun-kcie ro-z-hra-nia pre správu
  []
 
-[25]
-Overfull \hbox (83.95927pt too wide) in paragraph at lines 533--534
+[27]
+Overfull \hbox (83.95927pt too wide) in paragraph at lines 539--540
 []\T1/qpl/m/n/12 (-20) Nastaví hod-notu pa-ra-metra \T1/qpl/m/it/12 PA-RAM_PAGE
  \T1/qpl/m/n/12 (-20) na \T1/qpl/m/it/12 PAGE_EDIT_DIGITAL_OBJECT
  []
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [26] [27]
-[28
+) [28] [29]
+[30
 
 
 ]
-Kapitola 5.
-[29] [30
+Kapitola 6.
+[31] [32
 
 
 ]
-Overfull \hbox (12.33165pt too wide) in paragraph at lines 566--566
+Overfull \hbox (12.33165pt too wide) in paragraph at lines 578--578
 \T1/qpl/m/it/12 tem-ber 12-17, 2004, Pro-ce-e-dings\T1/qpl/m/n/12 (-20) . In: 
 Sprin-ger, 2005. \T1/qpl/m/sc/12 (-20) isbn\T1/qpl/m/n/12 (-20) : 3540302301. 
  []
 
-[31] [32]
+[33] [34]
 
 Package catoptions Warning: Undefined options 
 (catoptions)                [Family, Option, Value]: 
 (catoptions)                fontenc.sty,T1,. 
 (catoptions)                Default action already taken in each case .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
 (fi-pdflatex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 567.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `fi-pdflatex.out' has not changed.
-(rerunfilecheck)             Checksum: A01FE2287B36BC14240623F7A901C5E9;5843.
+(rerunfilecheck)             Checksum: 6DA01BC38B69D7C8D4EB837EB674F347;5812.
 Package logreq Info: Writing requests to 'fi-pdflatex.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 44764 strings out of 493698
- 794790 string characters out of 3144397
- 1364358 words of memory out of 3000000
+ 44769 strings out of 493698
+ 794830 string characters out of 3144397
+ 1364854 words of memory out of 3000000
  46994 multiletter control sequences out of 15000+200000
- 87607 words of font info for 133 fonts, out of 3000000 for 9000
+ 87740 words of font info for 134 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
  62i,8n,92p,10387b,3309s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -2525,9 +2522,9 @@ MiKTeX 2.9/fonts/type1/public/tex-gyre/qplb.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/tex-gyre/qplbi.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/tex-gyre/qplr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre
 /qplri.pfb>
-Output written on fi-pdflatex.pdf (46 pages, 971667 bytes).
+Output written on fi-pdflatex.pdf (48 pages, 976580 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
+ 721 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
  27202 words of extra memory for PDF output out of 29859 (max. 10000000)
 
