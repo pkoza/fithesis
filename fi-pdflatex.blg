@@ -1,0 +1,14 @@
+[1] Config.pm:340> INFO - This is Biber 2.4
+[1] Config.pm:343> INFO - Logfile is 'fi-pdflatex.blg'
+[65] biber-MSWIN64:287> INFO - === 
+[90] Biber.pm:347> INFO - Reading 'fi-pdflatex.bcf'
+[246] Biber.pm:738> INFO - Using all citekeys in bib section 0
+[269] Biber.pm:3150> INFO - Processing section 0
+[385] Biber.pm:3307> INFO - Looking for bibtex format file 'example.bib' for section 0
+[393] bibtex.pm:1124> INFO - Decoding LaTeX character macros into UTF-8
+[397] bibtex.pm:985> INFO - Found BibTeX data source 'example.bib'
+[861] UCollate.pm:65> INFO - Overriding locale 'sk-SK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[862] UCollate.pm:65> INFO - Overriding locale 'sk-SK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[863] Biber.pm:3027> INFO - Sorting list 'none/global' of type 'entry' with scheme 'none' and locale 'sk-SK'
+[890] bbl.pm:519> INFO - Writing 'fi-pdflatex.bbl' with encoding 'UTF-8'
+[893] bbl.pm:615> INFO - Output to fi-pdflatex.bbl

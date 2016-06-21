@@ -1,0 +1,328 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\preamble{%
+\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1} \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}%
+}
+
+
+\refsection{0}
+  \sortlist[entry]{none/global}
+    \entry{uml1}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=2145fd71e43344ed634c52862bd22d50}{%
+           family={Marshall},
+           family_i={M\bibinitperiod},
+           given={Chris},
+           given_i={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional, 2000}%
+      }
+      \strng{namehash}{2145fd71e43344ed634c52862bd22d50}
+      \strng{fullhash}{2145fd71e43344ed634c52862bd22d50}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{illustrated edition}
+      \field{isbn}{0201433133}
+      \field{title}{\textit{Enterprise Modeling with UML: Designing Successful Software Through Business Analysis}}
+      \field{year}{2000}
+    \endentry
+    \entry{uml2}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=fae245a77b8e6c85225b8109734a8375}{%
+           family={Roques},
+           family_i={R\bibinitperiod},
+           given={Pascal},
+           given_i={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{fae245a77b8e6c85225b8109734a8375}
+      \strng{fullhash}{fae245a77b8e6c85225b8109734a8375}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0470092793}
+      \field{title}{\textit{UML in Practice: The Art of Modeling Software Systems Demonstrated through Worked Examples and Solutions}}
+      \field{year}{2006}
+    \endentry
+    \entry{enterprise-systems}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=21fc9ec5ae50fbf254450f7935d2f235}{%
+           family={Giachetti},
+           family_i={G\bibinitperiod},
+           given={R.E.},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{21fc9ec5ae50fbf254450f7935d2f235}
+      \strng{fullhash}{21fc9ec5ae50fbf254450f7935d2f235}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781439882894}
+      \field{title}{\textit{Design of Enterprise Systems: Theory, Architecture, and Methods}}
+      \field{year}{2016}
+    \endentry
+    \entry{elastic-reference}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9482adc91b0ee7000cee0e5dc957d939}{%
+           family={Inc.},
+           family_i={I\bibinitperiod},
+           given={Elastic},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{9482adc91b0ee7000cee0e5dc957d939}
+      \strng{fullhash}{9482adc91b0ee7000cee0e5dc957d939}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html}}
+      \field{title}{\textit{Elasticsearch Reference Guide}}
+      \field{year}{2016}
+    \endentry
+    \entry{dublin-core}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=a624c0dfed990b85bd8f749079b614dd}{%
+           family={Muro-Medrano},
+           family_i={M\bibinithyphendelim M\bibinitperiod},
+           given={Javier\bibnamedelimb Nogueras-Iso{,}\bibnamedelimb Francisco\bibnamedelimb Javier\bibnamedelimb Zarazaga-Soria{,}\bibnamedelimb Pedro\bibnamedelima R.},
+           given_i={J\bibinitperiod\bibinitdelim N\bibinithyphendelim I\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim Z\bibinithyphendelim S\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{a624c0dfed990b85bd8f749079b614dd}
+      \strng{fullhash}{a624c0dfed990b85bd8f749079b614dd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{illustrated edition, 263 p}
+      \field{isbn}{3540244646}
+      \field{title}{\textit{Geographic Information Metadata for Spatial Data Infrastructures: Resources, Interoperability and Information Retrieval}}
+      \field{year}{2005}
+    \endentry
+    \entry{oai1}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=af7761c4ad06c52b51d3bae5e4184ae0}{%
+           family={Yuan},
+           family_i={Y\bibinitperiod},
+           given={Jonas\bibnamedelima X.},
+           given_i={J\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Chicago, IL : ALA TechSource, ©2010}%
+      }
+      \strng{namehash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \strng{fullhash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Library technology reports, v. 46, no. 4.}
+      \field{isbn}{0838958109}
+      \field{title}{\textit{Object reuse and exchange (OAI-ORE)}}
+      \field{year}{2010}
+    \endentry
+    \entry{oai2}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=7a004422556fc40ba63bb6a8323663cc}{%
+           family={Lyon},
+           family_i={L\bibinitperiod},
+           given={Rachel\bibnamedelimb Heery{,}\bibnamedelima Liz},
+           given_i={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7a004422556fc40ba63bb6a8323663cc}
+      \strng{fullhash}{7a004422556fc40ba63bb6a8323663cc}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{3540302301}
+      \field{title}{\textit{Research and Advanced Technology for Digital Libraries: 8th European Conference, ECDL 2004, Bath, UK, September 12-17, 2004, Proceedings}}
+      \field{year}{2005}
+    \endentry
+    \entry{z39501}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=dbe064d194da138716a1aca5da349862}{%
+           family={Bates},
+           family_i={B\bibinitperiod},
+           given={Marcia\bibnamedelima J.},
+           given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Auerbach Publications}%
+      }
+      \strng{namehash}{dbe064d194da138716a1aca5da349862}
+      \strng{fullhash}{dbe064d194da138716a1aca5da349862}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed.}
+      \field{isbn}{1466551356}
+      \field{title}{\textit{Understanding Information Retrieval Systems: Management, Types, and Standards}}
+      \field{year}{2011}
+    \endentry
+    \entry{z39502}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=14d544f19f31e63ea5ebc96b4fb3be71}{%
+           family={Karisiddappa},
+           family_i={K\bibinitperiod},
+           given={M\bibnamedelima Pandian{,}\bibnamedelimb C\bibnamedelima R},
+           given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{14d544f19f31e63ea5ebc96b4fb3be71}
+      \strng{fullhash}{14d544f19f31e63ea5ebc96b4fb3be71}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1780631200}
+      \field{title}{\textit{Emerging Technologies for Knowledge Resource Management}}
+      \field{year}{2007}
+    \endentry
+    \entry{portal-common1}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=729ad707050e2ea3c5b8e57d638565f7}{%
+           family={Tatnall},
+           family_i={T\bibinitperiod},
+           given={Arthur},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Idea group publishing}%
+      }
+      \strng{namehash}{729ad707050e2ea3c5b8e57d638565f7}
+      \strng{fullhash}{729ad707050e2ea3c5b8e57d638565f7}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{August, 2004}
+      \field{isbn}{159140438X}
+      \field{title}{\textit{Web Portals: The New Gateways to Internet Information and Services}}
+      \field{year}{2004}
+    \endentry
+    \entry{portal-common2}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=336b0a10c9b09e4229d3f5062f7ccaf9}{%
+           family={Katz},
+           family_i={K\bibinitperiod},
+           given={Richard\bibnamedelima N.},
+           given_i={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{336b0a10c9b09e4229d3f5062f7ccaf9}
+      \strng{fullhash}{336b0a10c9b09e4229d3f5062f7ccaf9}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{August, 2004}
+      \field{isbn}{078796171X}
+      \field{title}{\textit{Web Portals and Higher Education: Technologies to Make IT Personal}}
+      \field{year}{2004}
+    \endentry
+    \entry{yuan-interface}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=af7761c4ad06c52b51d3bae5e4184ae0}{%
+           family={Yuan},
+           family_i={Y\bibinitperiod},
+           given={Jonas\bibnamedelima X.},
+           given_i={J\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Pub}%
+      }
+      \strng{namehash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \strng{fullhash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Birmingham, U.K. xi, 359 p. 2010.}
+      \field{isbn}{1782162356}
+      \field{title}{\textit{Liferay user interface development: develop a powerful and rich user interface with Liferay Portal 6}}
+      \field{year}{2010}
+    \endentry
+    \entry{yuan-build}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=af7761c4ad06c52b51d3bae5e4184ae0}{%
+           family={Yuan},
+           family_i={Y\bibinitperiod},
+           given={Jonas\bibnamedelima X.},
+           given_i={J\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Open Source}%
+      }
+      \strng{namehash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \strng{fullhash}{af7761c4ad06c52b51d3bae5e4184ae0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed. Birmingham, U.K. xiv, 515 p, 2012}
+      \field{isbn}{1849515999}
+      \field{title}{\textit{Liferay portal systems development: build dynamic, content-rich, and social systems on top of Liferay}}
+      \field{year}{2012}
+    \endentry
+    \entry{java-ee}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=a3ee50683374ce06100a49b4a0331c04}{%
+           family={Kayal},
+           family_i={K\bibinitperiod},
+           given={Dhrubojyoti},
+           given_i={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{a3ee50683374ce06100a49b4a0331c04}
+      \strng{fullhash}{a3ee50683374ce06100a49b4a0331c04}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1430210109}
+      \field{title}{\textit{Pro Java EE Spring Patterns: Best Practices and Design Strategies Implementing Java EE Patterns with the Spring Framework}}
+      \field{year}{2008}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
